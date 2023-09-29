@@ -1,0 +1,136 @@
+---
+editor: source
+format:
+  #docx
+  pdf
+linestretch: 1.5
+indent: true
+number-sections: true
+cap-location: top
+Runningtitle: Uses and Limits of DAGs
+runningauthor: Devin Judge-Lord
+author:
+  - name: Devin Judge-Lord
+    email: judgelor@umich.edu
+    affiliations:
+      - name: University of Michigan
+        department: Ford School of Public Policy
+    note: "The most recent draft is at https://judgelord.github.io/dags/dags-paper.pdf. Comments welcome: judgelor@umich.edu"
+date: today
+bibliography: ../assets/dags.bib
+link-citations: true
+execute:
+  echo: false
+  cache: false
+  message: false
+  warning: false
+title: Uses and Limits of Directed Analytic Graphs Beyond Causal Designs in Social Science
+abstract: |
+  Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts). Even where causality is not identified, most quantitative and qualitative research claims can be visualized as (potentially causal) relationships among concepts. This essay explores the uses of DAGs beyond casual designs, including identifying gaps in literatures and assessing the generalizability of findings. Because the objects of study and potential relationships among them are constructed by research communities, DAGs can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Where meaning is shared, students might then use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. This essay also notes several limitations of DAGs. For example, DAGs are poor tools for communicating a researcher's subjective experiences. Likewise, conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows. 
+keywords: Directed Analytic Graphs, literature review, causal relationships, generalizability, shared meaning
+---
+
+
+# Introduction
+# Assessing the generalizability of theories and findings
+# Identifying Gaps in Literatures
+## Identifying Gaps in Cases Studied
+## Identifying Gaps in Methods Employed
+# Talking Past One Another
+# Unstated Assumptions
+# Limitations
+## Subjective Experience
+## Loss of Complexity and Nuance
+# Conclusion
+# Appendix {Appendix}
+
+
+# Introduction
+
+Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts).^[DAG is also used to describe a directed *acyclic* graphs, a special case where arrows between nodes can point in only one direction. While the acyclic property is extremely important for causal identification (as well as computer operations), it is less important for the applications I discuss here. Indeed, many social science theories posit cyclical relationships, so by DAG, I mean the more general analytic version where arrows can go both ways, also called simply a directed graph. Such visualizations with arrows connecting nodes go by many names in different disciplines, including "influence diagram" in decision analysis and a sub-class of "timeline-based" methods in infographics.] 
+The “experimental turn” in social science and increased emphasis on causal identification have increased the prevalence of figures featuring arrows representing causal relationships among variables. Even where causality is not identified, most quantitative and qualitative research claims can be visualized as (potentially causal) relationships among concepts [@Lo2023].
+
+Qualitative researchers have productively employed directed graphs in a toolkit of research methods known as participant-led diagramming or graphic elicitation [@Bravington2018]. Many qualitative research tools ask participants to draw their understanding of places or events. One application of drawing exercises is to elicit beliefs about casual relationships from participants by asking them to draw diagrams with arrows. Among other purposes, these methods allow researchers to assess the extent to which understandings of causal relationships among people and events are shared among participants. For example, a researcher might compare participants' understandings of the timeline of events or the critical junctures. 
+
+Diagrams are tools to convey abstractions.
+All models and general claims about the social world are necessarily simplifications of complex social relations and are thus reductive. Small (and sometimes complex) graphs or concept maps have long been a tool to illustrate claims in a way that makes them easier to understand. 
+
+In some ways, visualizations like DAGs offer a richer set of tools for presenting explanations than prose, especially for mechanistic explanations. 
+
+My aim in this essay is not to explore the implications of the mechanistic view of the world. Much has been written on this in the philosophy of science literature. For example, @Bechtel2005 contrasts mechanistic explanations with nomological explanations as approaches to scientific representation. I also do not attempt to instruct students on conducting generalizable research or interrogate whether generalizability should be the object of study. 
+
+My aim is a more limited and practical exploration of the uses and limitations of directed analytic graphs as a tool in the research process. Much of this amounts to recommendations on how to use visual tools to be more explicit, clear, and probing about the relationships among theories and findings. A researcher may often conclude that the contexts or assumptions of prior studies are incommensurate, and generalizing across them is impossible. More likely, these exercises will highlight some points of similarity and other points of difference in cases, concepts, and causal theories. The aim is to help us clarify how the words we use fit into a conceptual schema and the limits of visual schemas for describing our complex world. 
+
+Humans have used diagrams as long or longer than written language. They are a common feature of science. Two recent developments make them worth exploring now. First, they are increasingly common in social science focused on causal identification. Second, they have become easier to use due to advances in network analysis that require visuals.  Computers can now quickly produce diagrams and network statistics about the relationships with relatively minimal input [@Lo2023].  As these powerful tools become easier to use, it is a good time to examine their uses beyond causal and network analysis. 
+
+# Assessing the generalizability of theories and findings
+
+Because the objects of study and potential relationships among them are constructed by research communities, DAGs can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Scholars may be operating with similar definitions if the words and arrows between them align. If not, they may be using the same language to talk about different concepts.  
+
+Similar to how qualitative researchers use participant-drawn diagrams to reveal how different people understand the world, the similarities and differences in the causal models researchers rely upon (explicitly or implicitly) reveal the state of shared understanding in a research community. Models of causal relationships are developed from specific cases and theories. Generalization involves investigating both the similarity of new exemplars to those already studied and the differences between them [@Bechtel2005]. Attempting to consolidate causal theories from various studies into a single DAG can help the congruence of both theory and results. 
+
+The extent to which theories generalize can be revealed by attempting to consolidate the posited relationships among concepts with other theories built in different contexts. The exercise of attempting to combine causal diagrams from multiple studies may provide clarity that is often missing from prose. For example, a narrative description of how a study is integrating insights from previous work might say something like, "We build on how scholar A defines concept X, but incorporating insights from scholar B's concepts about Y. Drawing a diagram of the relationship between X and Y may add clarity to what exactly we mean. Is it that X and Y both belong to a larger conceptual category? Is Y a cause, condition, or effect of X that matters for interpreting X or the relationship of X to other concepts? A diagram can force us to clarify things that language leaves ambiguous.
+
+If theories travel well---that is, they can be integrated with DAGs built to describe other contexts, we can then assess the generalizability of findings across contexts. The extent to which findings generalize can be revealed by comparing findings across studies of the same causal relationship. This is what most meta-analyses of empirical findings aim to do. 
+
+Almost without exception in the social sciences, meta-analyses note the difficulty of comparing findings across studies due to differences in how different studies conceptualize and operationalize variables the meta-analysis seeks to assess. The conjecture of all meta-analyses is that the relationship examined in each study is conceptually the same, and thus the findings are comparable. Stated differently, the theories generalize, and thus, we can assess whether the findings generalize. 
+
+However, to productively employ DAGs to assess generalizability, a student need not conduct a full meta-analysis. Each pairwise comparison of studies presents opportunities to comment on the compatibility of theories. If the theories can be made compatible, and if the studies examine the same arrow between two concepts, then the student can comment on the compatibility of findings. This is the (often implicit) setup of every study that sets out to explain contradictory findings; the conjecture is that the conceptual target is the same and empirical results are different. Formalizing this type of conjecture in a DAG can make such conjectures more explicit.
+
+Studies that set out to reconcile contradictory findings often conclude that previous studies arrived at different results because they operationalized (e.g., measured) things differently. Two studies may use the same labels for different things and thus reach opposite conclusions. For example, political scientists, sociologists, and legal scholars debated whether voluntary certification standards had increased or decreased in stringency for decades. Studies came to opposite conclusions about whether stringency was increasing, decreasing, or staying the same because they measured regulatory stringency differently [@judgelord2020]. 
+
+# Identifying Gaps in Literatures 
+
+Where meaning is shared, students might use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. 
+
+## Identifying Gaps in Relationships Studied 
+
+Representing the world as sets of discrete causes, mechanisms, and effects provides direction to both the discovery and testing of mechanistic explanations. Mapping out hypothesized causal chains and mechanisms involves developing organized systems of component parts [@Bechtel2005]. Each part of a hypothesized causal chain can then be studied with a research design tailored to that narrow task situated within a larger research agenda and picture of the world.
+
+
+## Identifying Gaps in Cases Studied
+Theoretically, one of the most straightforward research designs is to replicate an existing study in a different context. In practice, studies aimed squarely at replication are rare in social science, and differences in contexts mean that concepts and methods will rarely be deployed in exactly the same way. However, it is nevertheless common to motivate research by commenting on the wrench of cases where similar relationships have and have not been studied.
+
+Diagramming the concepts and relationships of interest may allow researchers to comment more explicitly on the range of previous cases in which a particular relationship has and has not been studied. 
+
+## Identifying Gaps in Methods Employed
+TODO 
+
+# Talking Past One Another
+
+Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." This can occur in several ways. They may be using different words for similar concepts, similar words for different concepts, or different causal models. 
+
+When scholars use different words to describe similar concepts, it will appear in a DAG as two nodes with the same arrows going in from and out to other nodes. 
+
+When scholars use the same word or phrase for different concepts, drawing arrows going in or out of that node becomes difficult. If we consider the phrase as holding one concept, one set of causal relationships makes sense, but when we switch to the other definition, many of those relationships may not make sense. This is a clue that there is ambiguity in the term and a lack of shared understanding.  
+
+# Unstated Assumptions 
+
+Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city's drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control. Another social scientist might draw a diagram pointing from the downstream community to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water. Each model assumes a set of social responsibilities and appropriate modes of control.
+# Limitations 
+
+This essay also notes several limitations of DAGs. 
+
+## Subjective Experience
+
+DAGs are poor tools for communicating a researcher's subjective experiences. DAGs present the world as mechanistic. For the same reason that a machine is a useful metaphor for simplifying and developing a shared understanding of the world, it also deemphasizes subjective experience. 
+
+
+However, DAGs can be a tool to systematically gather data on the subjective understandings of causal relationships [@Bravington2018]. In the same way that formalizing claims about research findings can highlight places where scholars share or lack meaning, qualitative researchers use DAGs as a research tool to elicit participants' understandings of causal relationships. For example, a researcher might ask participants to draw their understanding of the chain of events or to draw arrows connecting events of interest. This method is known as "graphic elicitation" [@Bravington2018].
+
+## Loss of Complexity and Nuance
+
+Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows. 
+
+# Conclusion
+
+
+# Appendix {.unnumbered}
+
+The democratic peace hypothesis from Gartzke1998.
+
+
+# References 
+
+
+
