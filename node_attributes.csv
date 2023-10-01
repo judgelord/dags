@@ -1,0 +1,14 @@
+node,x,y,color,frame.color,size
+"Advocacy
+Campaign",1,3,grey,white,50
+Policy,4,3,grey,white,50
+"Inside
+Tactics",2,1,grey,white,50
+"Outside
+Tactics",2,5,grey,white,50
+"Perceived
+Legitimacy
+(Inside)",3,2,grey,white,50
+"Perceived
+Legitimacy
+(Outside)",3,4,grey,white,50
