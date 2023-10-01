@@ -31,19 +31,21 @@ node_attributes |>
 
 #################### LOAD DATA ########################
 
-# load data
-edges <- read_csv("edges.csv")
-node_attributes <- read_csv("node_attributes.csv")
+# load data for example dags
+edges <- read_csv("edges.csv") # https://github.com/judgelord/dags/blob/main/edges.csv
+node_attributes <- read_csv("node_attributes.csv") # https://github.com/judgelord/dags/blob/main/node_attributes.csv
 
 # a plot function based on netlit's review() function
 netlit_plot <- function(edges){
-  netlit::review(edges, edge_attributes = "color",
-                 node_attributes = node_attributes)|>
+  # create a graph with netlit's review() function
+  netlit::review(edges,
+                 edge_attributes = names(edges),
+                 node_attributes = node_attributes
+                 ) |>
     # pluck out the graph object
     pluck("graph") |>
     # plot using the default igraph plot function
     plot()
-
 }
 # (for fancier plots, see see judgelord.github.io/netlit/articles)
 

@@ -31,6 +31,26 @@ keywords: Directed Analytic Graphs, literature review, causal relationships, gen
 ---
 
 
+```{r}
+# load data for example dags
+edges <- read_csv("edges.csv") # https://github.com/judgelord/dags/blob/main/edges.csv
+node_attributes <- read_csv("node_attributes.csv") # https://github.com/judgelord/dags/blob/main/node_attributes.csv
+
+# a plot function based on netlit's review() function
+netlit_plot <- function(edges){
+  # create a graph with netlit's review() function
+  netlit::review(edges, 
+                 edge_attributes = "color",
+                 node_attributes = node_attributes) |>
+    # pluck out the graph object
+    pluck("graph") |>
+    # plot using the default igraph plot function
+    plot()
+}
+# (for fancier plots, see see judgelord.github.io/netlit/articles)
+```
+
+
 # Introduction
 # Assessing the generalizability of theories and findings
 # Identifying Gaps in Literatures
@@ -89,9 +109,9 @@ Representing the world as sets of discrete causes, mechanisms, and effects provi
 
 
 ## Identifying Gaps in Cases Studied
-Theoretically, one of the most straightforward research designs is to replicate an existing study in a different context. In practice, studies aimed squarely at replication are rare in social science, and differences in contexts mean that concepts and methods will rarely be deployed in exactly the same way. However, it is nevertheless common to motivate research by commenting on the wrench of cases where similar relationships have and have not been studied.
+Theoretically, one of the most straightforward research designs is to replicate an existing study in a different context. In practice, studies aimed squarely at replication are rare in social science, and differences in contexts mean that concepts and methods will rarely be deployed in exactly the same way. However, it is nevertheless common to motivate research by commenting on the range of cases where similar relationships have and have not been studied. In "casing" the prior literature (envitably a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies), we make claims about the subjects of inquiry [@Soss2021]. 
 
-Diagramming the concepts and relationships of interest may allow researchers to comment more explicitly on the range of previous cases in which a particular relationship has and has not been studied. 
+Diagramming the concepts and relationships of interest may allow researchers to comment more explicitly on the range of previous cases in which a particular relationship has and has not been studied. It makes explicit what we are claiming the subjects of prior research were "cases of" by stating which causal relationships we believe were studied and in other contexts. 
 
 ## Identifying Gaps in Methods Employed
 TODO 
@@ -104,6 +124,8 @@ When scholars use different words to describe similar concepts, it will appear i
 
 When scholars use the same word or phrase for different concepts, drawing arrows going in or out of that node becomes difficult. If we consider the phrase as holding one concept, one set of causal relationships makes sense, but when we switch to the other definition, many of those relationships may not make sense. This is a clue that there is ambiguity in the term and a lack of shared understanding.  
 
+
+Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. Both @Balla2020 and @JudgeLord2021 use the same data and discuss their research terms. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 finds that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, they are testing different causal pathways and comparing different things. @Balla2020 compares agency responses to inside lobbying to responses to outside lobbying, including *within* the same broader advocacy campaign (comparing the two red arrows in figure @fig. @JudgeLord2021 compares agency responses to insider lobbying only *across* advocacy campaigns with more and less outside lobbying (comparing the red arrows in figure @fig *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the DAG.
 # Unstated Assumptions 
 
 Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city's drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control. Another social scientist might draw a diagram pointing from the downstream community to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water. Each model assumes a set of social responsibilities and appropriate modes of control.
@@ -127,10 +149,36 @@ Conceptual complexity and nuance possible in prose are necessarily lost in trans
 
 # Appendix {.unnumbered}
 
-The democratic peace hypothesis from Gartzke1998.
+## Code
+
+All plots in this paper used the `netlit` R package introduced in @Lo2023 (available at https://judgelord.github.io/netlit), example data available at https://github.com/judgelord/dags, and the following plot function: 
+
+```
+# load data for example DAGs
+edges <- read_csv("edges.csv") # https://github.com/judgelord/dags/blob/main/edges.csv
+node_attributes <- read_csv("node_attributes.csv") # https://github.com/judgelord/dags/blob/main/node_attributes.csv
+
+# a plot function based on netlit's review() function
+netlit_plot <- function(edges){
+  # create a graph with netlit's review() function
+  netlit::review(edges,
+                 edge_attributes = names(edges),
+                 node_attributes = node_attributes
+                 ) |>
+    # pluck out the graph object
+    pluck("graph") |>
+    # plot using the default igraph plot function
+    plot()
+}
+
+# (for fancier plots, see see judgelord.github.io/netlit/articles)
+```
 
 
-# References 
+<!--The democratic peace hypothesis from Gartzke1998.-->
+
+
+### References 
 
 
 
