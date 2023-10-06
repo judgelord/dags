@@ -37,10 +37,6 @@ keywords: Directed Analytic Graphs, literature review, causal relationships, gen
 library(tidyverse)
 library(netlit) # https://JudgeLord.github.io/netlit/articles/netlit.html
 
-# set margins for plots 
-par(mar=c(0,0,0,0)+.1)
-
-
 # load data for example DAGs
 edges <- read_csv(here::here("edges.csv")) # https://github.com/JudgeLord/dags/blob/main/edges.csv
 node_attributes <- read_csv(here::here("node_attributes.csv")) # https://github.com/JudgeLord/dags/blob/main/node_attributes.csv
@@ -56,7 +52,6 @@ netlit_plot <- function(edges){
     # plot using the default igraph plot function
     plot()
 }
-# (for fancier plots, see see JudgeLord.github.io/netlit/articles)
 ```
 
 \noindent **NOTE TO WORKSHOP PARTICIPANTS:** This essay follows from a recent effort to make it easier for scholars to employ graphing and network analysis tools in literature reviews [@Lo2023; @netlit]. Having made it easier to present concepts and arguments as discrete arrows linking discrete concepts, this is my very early and incomplete attempt to reflect on the potential value and pitfalls of doing so. I have some examples from scholarship and some placeholder diagrams. I would love your help identifying examples of prior work where causal diagrams are compatible or incompatible for the reasons listed below (or other reasons!).  I have not thus far devoted much time to reflect in writing on what we are doing as scholars and how we can do it better, so I very much appreciate the organizer's invitation to do so here. 
@@ -74,7 +69,7 @@ All models and general claims about the social world are necessarily simplificat
 
 In some ways, visualizations like DAGs offer a richer set of tools for presenting explanations than prose, especially for mechanistic explanations. 
 
-My aim in this essay is not to explore the implications of the mechanistic view of the world. Much has been written on this in the philosophy of science literature. For example, @Bechtel2005 contrasts mechanistic explanations with nomological explanations as approaches to scientific representation. In political science @Soss2021 and others have discussed the advantages of the nominal approach. I also do not attempt to instruct students on conducting generalizable research or interrogate whether generalizability should be the object of study. 
+My aim in this essay is not to explore the implications of the mechanistic view of the world. Much has been written on this in the philosophy of science literature. For example, @Bechtel2005 contrasts mechanistic explanations with nomological explanations as approaches to scientific representation. In political science, @Soss2021 and others have discussed the advantages of the nominal approach. I also do not attempt to instruct students on conducting generalizable research or interrogate whether generalizability should be the object of study. 
 
 My aim is a more limited and practical exploration of the uses and limitations of directed analytic graphs as a tool in the research process. Much of this amounts to recommendations on how to use visual tools to be more explicit, clear, and probing about the relationships among theories and findings. A researcher may often conclude that the contexts or assumptions of prior studies are incommensurate, and generalizing across them is impossible. More likely, these exercises will highlight some points of similarity and other points of difference in cases, concepts, and causal theories. The aim is to help us clarify how the words we use fit into a conceptual schema and the limits of visual schemas for describing our complex world. 
 
@@ -105,7 +100,7 @@ When scholars use the same word or phrase for different concepts, drawing arrows
 Studies that set out to reconcile contradictory findings often conclude that previous studies arrived at different results because they operationalized (e.g., measured) concepts differently. Two studies may use the same labels with different meanings and thus reach opposite conclusions. For example, political scientists, sociologists, and legal scholars debated whether voluntary certification standards had increased or decreased in stringency for decades. Studies came to opposite conclusions about whether stringency was increasing, decreasing, or staying the same because they measured regulatory stringency differently [@JudgeLord2020]. 
 
 Similarly, scholars may compare different causal relationships but use the same labels to describe these relationships. This may occur even when there is agreement on all of the concepts, cases, and overall aim of the study.
-Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. @Balla2020 and @JudgeLord2021 use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 finds that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. @Balla2020 compares agency responses to inside lobbying to responses to outside lobbying, including *within* the same advocacy campaign (comparing the red arrow and blue arrow in figure @fig-rulemaking-1). @JudgeLord2021 compares agency responses only to insider lobbying *across* advocacy campaigns with and without outside lobbying (comparing the red arrows in figure @fig-rulemaking-2 *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the DAG.
+Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. @Balla2020 and @JudgeLord2021 use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 finds that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. @Balla2020 compares agency responses to inside lobbying to responses to outside lobbying, including *within* the same advocacy campaign (comparing the red arrow and blue arrow in @fig-rulemaking-1). @JudgeLord2021 compares agency responses only to insider lobbying *across* advocacy campaigns with and without outside lobbying (comparing the red arrows in @fig-rulemaking-2 *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the DAG.
 
 ```{r}
 #| label: fig-rulemaking
@@ -128,16 +123,23 @@ filter(edges, cites == "Judge-Lord 2021")  |>
 
 
 
+
+The exercises of comparing and attempting to integrate the two DAGs in @fig-rulemaking-1 and @fig-rulemaking-2 raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the DAGs helps with this kind of assessment. In more complex DAGs, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using "node centrality" measures returned by graphing tools like `netlit`.
+
+Second, visualizing the causal models implied by these two studies reveals that, despite aiming to study the same thing, they are comparing different things. Students might ask which set of casual relationships ought to be compared better answers the question. In some cases, we may conclude that some previous scholars have been comparing the wrong things. Other times, we may conclude that there are multiple valuable interpretations of a question---both sets of scholarship may be right, just talking past each other. DAGs may help clarify such ambiguity. 
+
 # Identifying Gaps in Literatures 
 
-Where meaning is shared, students might use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. 
+Where meaning is shared, students might use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. For example, the two studies shown in @fig-rulemaking generally agree on the causal model, use similar data, and similar methods. However, neither study examined the advocate's choice to use inside or outside lobbying tactics. A broader review of the literature will find little written about the context of US agency policymaking. Likewise, the cases for both studies are federal agency rules. A broader review of the literature will find almost no parallel research on state agency rules. Finally, a review 
 
 ## Identifying Gaps in Relationships Studied 
 
-Representing the world as sets of discrete causes, mechanisms, and effects provides direction to both the discovery and testing of mechanistic explanations. Mapping out hypothesized causal chains and mechanisms involves developing organized systems of component parts [@Bechtel2005]. Each part of a hypothesized causal chain can then be studied with a research design tailored to that narrow task situated within a larger research agenda and picture of the world.
+Representing the world as sets of discrete causes, mechanisms, and effects provides direction to both the discovery and testing of mechanistic explanations. Mapping out hypothesized causal chains and mechanisms involves developing organized systems of component parts [@Bechtel2005]. Each part of a hypothesized causal chain can then be studied with a research design tailored to that narrow task situated within a larger research agenda and picture of the world. This broader picture of the world is what we craft when we review the prior literature. 
 
+Diagramming our understanding of theorized concepts and relationships can reveal two broad types of "gaps" that one might identify in a review of prior work: gaps in theory and gaps in the empirical study of theorized relationships. Gaps in theory appear in a graph as a missing connection between concepts that, upon reflection, may be worth theorizing. Gaps in empirical studies appear when we visually distinguish relationships that have been studied from those that have only been theorized. 
 
 ## Identifying Gaps in Cases Studied
+
 Theoretically, one of the most straightforward research designs is to replicate an existing study in a different context. In practice, studies aimed squarely at replication are rare in social science, and differences in contexts mean that concepts and methods will rarely be deployed in exactly the same way. However, it is nevertheless common to motivate research by commenting on the range of cases where similar relationships have and have not been studied. In "casing" the prior literature (inevitably a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies), we make claims about the subjects of inquiry [@Soss2021]. 
 
 Diagramming the concepts and relationships of interest may allow researchers to comment more explicitly on the range of previous cases in which a particular relationship has and has not been studied. It makes explicit what we are claiming the subjects of prior research were "cases of" by stating which causal relationships we believe were studied and in other contexts. 
@@ -189,9 +191,10 @@ netlit_plot <- function(edges){
     # plot using the default igraph plot function
     plot(margin=0)
 }
+# (for fancier plots, see see JudgeLord.github.io/netlit/articles)
 ```
 
-For fancier plots, see https://judgelord.github.io/netlit/articles/netlit.html.
+
 <!--The democratic peace hypothesis from Gartzke1998.-->
 
 
