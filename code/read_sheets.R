@@ -57,3 +57,9 @@ filter(edges, cites == "Judge-Lord 2021")  |>
 filter(edges, cites == "Balla et al. 2020") |>
   netlit_plot()
 
+filter(edges, cites == "river-state") |>
+  netlit_plot()
+
+filter(edges, cites == "river-city")  |>
+  netlit_plot()
+

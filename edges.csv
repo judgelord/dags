@@ -43,3 +43,14 @@ Legitimacy
 talking past,Balla et al. 2020,gray,"Perceived
 Legitimacy
 (Outside)",Policy
+river,river-state,gray,"State
+Regulation",Farmers
+river,river-state,gray,Farmers,Pollution
+river,river-state,gray,Pollution,"Downstream
+City"
+river,river-city,gray,Farmers,Pollution
+river,river-city,gray,"Downstream
+City",Payments
+river,river-city,gray,Payments,Farmers
+river,river-city,gray,Pollution,"Downstream
+City"

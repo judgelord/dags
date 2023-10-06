@@ -3,6 +3,7 @@ editor: source
 format:
   #docx
   pdf
+  #html
 linestretch: 1.5
 indent: true
 number-sections: true
@@ -54,7 +55,7 @@ netlit_plot <- function(edges){
 }
 ```
 
-\noindent **NOTE TO WORKSHOP PARTICIPANTS:** This essay follows from a recent effort to make it easier for scholars to employ graphing and network analysis tools in literature reviews [@Lo2023; @netlit]. Having made it easier to present concepts and arguments as discrete arrows linking discrete concepts, this is my very early and incomplete attempt to reflect on the potential value and pitfalls of doing so. I have some examples from scholarship and some placeholder diagrams. I would love your help identifying examples of prior work where causal diagrams are compatible or incompatible for the reasons listed below (or other reasons!).  I have not thus far devoted much time to reflect in writing on what we are doing as scholars and how we can do it better, so I very much appreciate the organizer's invitation to do so here. 
+\noindent **NOTE TO WORKSHOP PARTICIPANTS:** This essay follows from a recent effort to make it easier for scholars to employ graphing and network analysis tools in literature reviews [@Lo2023; @netlit]. Having made it easier to present concepts and arguments as discrete arrows linking discrete concepts, this is my very early and incomplete attempt to reflect on the potential value and pitfalls of doing so. The most recent draft is here: [judgelord.github.io/dags](https://judgelord.github.io/dags). I have some examples from scholarship and some placeholder diagrams. I would love your help identifying examples of prior work where causal diagrams are compatible or incompatible for the reasons listed below (or other reasons!).  I have not thus far devoted much time to reflect in writing on what we are doing as scholars and how we can do it better, so I very much appreciate the organizer's invitation to do so here. 
 
 \bigskip
 # Introduction
@@ -124,7 +125,27 @@ filter(edges, cites == "Judge-Lord 2021")  |>
 
 
 
-The exercises of comparing and attempting to integrate the two DAGs in @fig-rulemaking-1 and @fig-rulemaking-2 raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the DAGs helps with this kind of assessment. In more complex DAGs, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using "node centrality" measures returned by graphing tools like `netlit`.
+The exercises of comparing and attempting to integrate the two DAGs in @fig-rulemaking-1 and @fig-rulemaking-2 raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the DAGs helps with this kind of assessment. In more complex DAGs, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using "degree centrality" measures returned by graphing tools like `netlit`. Table @tbl-rulemaking shows that the perceived legitimacy of inside advocacy tactics is more central to the theory in @JudgeLord2021 (with total degree central of 3) than in @Balla2020  (with total degree central of 2).
+
+```{r}
+#| label: tbl-rulemaking
+#| tbl-cap: Node Centrality Two Studies of Policy Influence
+#| fig-cap-location: top
+
+a <- filter(edges, cites == "Balla et al. 2020") |> 
+  netlit::review() |> 
+  pluck("nodelist") |>
+    mutate(node = str_replace_all(node, "\n", " ")) |>
+    select(Node = node, `Degree Centrality (Balla et al. 2020)` = degree_total )
+
+b <- filter(edges, cites == "Judge-Lord 2021")  |>
+  netlit::review() |> 
+  pluck("nodelist") |>
+      mutate(node = str_replace_all(node, "\n", " ")) |>
+  select(Node = node, `Degree Centrality (Judge-Lord 2021)` = degree_total )
+
+full_join(a, b) |> knitr::kable()
+```
 
 Second, visualizing the causal models implied by these two studies reveals that, despite aiming to study the same thing, they are comparing different things. Students might ask which set of casual relationships ought to be compared better answers the question. In some cases, we may conclude that some previous scholars have been comparing the wrong things. Other times, we may conclude that there are multiple valuable interpretations of a question---both sets of scholarship may be right, just talking past each other. DAGs may help clarify such ambiguity. 
 
@@ -150,21 +171,44 @@ Defining concepts and studying causal relationships can both be done in many way
 
 # Unstated Assumptions 
 
-Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city's drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control. Another social scientist might draw a diagram pointing from the downstream community to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water. Each model assumes a set of social responsibilities and appropriate modes of control.
+Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city's drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control (@fig-river-1). Another social scientist might draw a diagram pointing from the downstream city to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water (@fig-river-2). Each model assumes a set of social responsibilities and appropriate modes of control.
+
+
+```{r}
+#| label: fig-river
+#| fig-cap: "Two Causal Models Highlight Different Political Assumptions About Responsiblity and Control" 
+#| fig-subcap:
+#|   - "" 
+#|   - ""
+#| layout-ncol: 2
+#| fig-width: 3
+#| fig-height: 2.5
+#| fig-cap-location: top
+par(mar=c(0,0,0,0))
+
+filter(edges, cites == "river-state") |>
+  netlit_plot()
+
+filter(edges, cites == "river-city")  |>
+  netlit_plot()
+```
+
+
+
+
 # Limitations 
 
-This essay also notes several limitations of DAGs. 
+There are well-noted limitations to mechanistic descriptions of the world. 
 
 ## Subjective Experience
 
-DAGs are poor tools for communicating a researcher's subjective experiences. DAGs present the world as mechanistic. For the same reason that a machine is a useful metaphor for simplifying and developing a shared understanding of the world, it also deemphasizes subjective experience. 
-
+DAGs are poor tools for communicating a researcher's subjective experiences. DAGs present the world as mechanistic. For the same reason that a machine is a useful metaphor for simplifying and developing a shared understanding of the world, it also deemphasizes subjective experience. A causal diagram focuses on a process that exists out there in the world, rather than an experience. Focusing on the *sequence* of events may deemphasize how people, including researchers, *feel* about those events.
 
 However, DAGs can be a tool to systematically gather data on the subjective understandings of causal relationships [@Bravington2018]. In the same way that formalizing claims about research findings can highlight places where scholars share or lack meaning, qualitative researchers use DAGs as a research tool to elicit participants' understandings of causal relationships. For example, a researcher might ask participants to draw their understanding of the chain of events or to draw arrows connecting events of interest. This method is known as "graphic elicitation" [@Bravington2018].
 
 ## Loss of Complexity and Nuance
 
-Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows, especially if the aim is to develop general models.
+Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows, especially if the aim is to develop general models. Indeed, much of the confusion discussed above resulting from scholars "talking past each other" or using incommensurate models results from words or phrases being taken out of context. In the context of the prose of each study, the definitions of the concepts usually make sense. Confusion arises when we take claims out of this context and set them alongside other studies that use similar words or phrases with different meanings. On the one hand, reconciling conflicting meanings of concepts can resolve ambiguity and contribute toward generalization. On the other hand, doing so may involve abandoning the complexity and nuance that a scholar meant when they developed or adopted a concept to describe a particular set of cases.
 
 # Conclusion
 
@@ -191,14 +235,18 @@ netlit_plot <- function(edges){
     # plot using the default igraph plot function
     plot(margin=0)
 }
-# (for fancier plots, see see JudgeLord.github.io/netlit/articles)
 ```
+
+For fancier plots, see see <JudgeLord.github.io/netlit/articles>
+
 
 
 <!--The democratic peace hypothesis from Gartzke1998.-->
 
 
 ### References 
+
+
 
 
 
