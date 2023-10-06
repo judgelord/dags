@@ -54,3 +54,37 @@ City",Payments
 river,river-city,gray,Payments,Farmers
 river,river-city,gray,Pollution,"Downstream
 City"
+forestry,Cashore et al. 2004,#3B99B1,"Plantation
+forestry",Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,Chemicals,Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,Clearcuts,Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,Exotics,Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,Reserves,Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,"Streamside
+harvesting",Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,GMOs,Sustainablity
+forestry,Overdevest and Zeitlin 2014,#F5191C,"Public
+reporting",Sustainablity
+forestry,Overdevest and Zeitlin 2014,#F5191C,"Stakeholder
+consultation",Sustainablity
+forestry,Overdevest and Zeitlin 2014,#F5191C,Auditing,Sustainablity
+forestry,Overdevest and Zeitlin 2014,#F5191C,"Supply
+chain
+tracking",Sustainablity
+forestry,Cashore et al. 2004,#3B99B1,Regulation,"Plantation
+forestry"
+forestry,Cashore et al. 2004,#3B99B1,Regulation,Chemicals
+forestry,Cashore et al. 2004,#3B99B1,Regulation,Clearcuts
+forestry,Cashore et al. 2004,#3B99B1,Regulation,Exotics
+forestry,Cashore et al. 2004,#3B99B1,Regulation,Reserves
+forestry,Cashore et al. 2004,#3B99B1,Regulation,"Streamside
+harvesting"
+forestry,Cashore et al. 2004,#3B99B1,Regulation,GMOs
+forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,"Public
+reporting"
+forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,"Stakeholder
+consultation"
+forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,Auditing
+forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,"Supply
+chain
+tracking"

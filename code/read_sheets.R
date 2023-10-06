@@ -21,10 +21,14 @@ edges |>
   write_csv("edges.csv")
 
 node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "nodes") |>
+
   drop_na(node)
 
 node_attributes |>
-  mutate(node = node |> str_replace_all(" ", "\n")) |>
+  mutate(node = node |> str_replace_all(" ", "\n"),
+         # colorblind friendly
+         color = str_replace(color, "blue", "#3B99B1"),
+         color = str_replace(color, "red", "#F5191C")) |>
   write_csv("node_attributes.csv")
 
 
