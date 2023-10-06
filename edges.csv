@@ -1,45 +1,45 @@
-cites,color,from,to
-Judge-Lord 2021,gray,"Advocacy
+case,cites,color,from,to
+talking past,Judge-Lord 2021,gray,"Advocacy
 Campaign","Inside
 Tactics"
-Judge-Lord 2021,gray,"Advocacy
+talking past,Judge-Lord 2021,gray,"Advocacy
 Campaign","Outside
 Tactics"
-Judge-Lord 2021,#F5191C,"Inside
+talking past,Judge-Lord 2021,#F5191C,"Inside
 Tactics","Perceived
 Legitimacy
 (Inside)"
-Judge-Lord 2021,gray,"Outside
+talking past,NA,gray,"Outside
 Tactics","Perceived
 Legitimacy
 (Outside)"
-Judge-Lord 2021,gray,"Perceived
+talking past,Judge-Lord 2021,gray,"Perceived
 Legitimacy
 (Inside)",Policy
-Judge-Lord 2021,gray,"Perceived
+talking past,NA,gray,"Perceived
 Legitimacy
 (Outside)",Policy
-Judge-Lord 2021,#F5191C,"Outside
+talking past,Judge-Lord 2021,#F5191C,"Outside
 Tactics","Perceived
 Legitimacy
 (Inside)"
-Balla et al. 2020,gray,"Advocacy
+talking past,Balla et al. 2020,gray,"Advocacy
 Campaign","Inside
 Tactics"
-Balla et al. 2020,gray,"Advocacy
+talking past,Balla et al. 2020,gray,"Advocacy
 Campaign","Outside
 Tactics"
-Balla et al. 2020,#F5191C,"Inside
+talking past,Balla et al. 2020,#F5191C,"Inside
 Tactics","Perceived
 Legitimacy
 (Inside)"
-Balla et al. 2020,#3B99B1,"Outside
+talking past,Balla et al. 2020,#3B99B1,"Outside
 Tactics","Perceived
 Legitimacy
 (Outside)"
-Balla et al. 2020,gray,"Perceived
+talking past,Balla et al. 2020,gray,"Perceived
 Legitimacy
 (Inside)",Policy
-Balla et al. 2020,gray,"Perceived
+talking past,Balla et al. 2020,gray,"Perceived
 Legitimacy
 (Outside)",Policy

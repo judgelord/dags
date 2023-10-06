@@ -56,3 +56,4 @@ filter(edges, cites == "Judge-Lord 2021")  |>
 
 filter(edges, cites == "Balla et al. 2020") |>
   netlit_plot()
+

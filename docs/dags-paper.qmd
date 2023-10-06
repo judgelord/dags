@@ -7,6 +7,7 @@ linestretch: 1.5
 indent: true
 number-sections: true
 cap-location: top
+fig-cap-location: top
 Runningtitle: Uses and Limits of DAGs
 runningauthor: Devin Judge-Lord
 author:
@@ -15,7 +16,7 @@ author:
     affiliations:
       - name: University of Michigan
         department: Ford School of Public Policy
-    note: "The most recent draft is at https://judgelord.github.io/dags/dags-paper.pdf. Comments welcome: judgelor@umich.edu"
+    note: "The most recent draft is at https://JudgeLord.github.io/dags/dags-paper.pdf. Comments welcome: judgelor@umich.edu"
 date: today
 bibliography: ../assets/dags.bib
 link-citations: true
@@ -32,9 +33,17 @@ keywords: Directed Analytic Graphs, literature review, causal relationships, gen
 
 
 ```{r}
-# load data for example dags
-edges <- read_csv("edges.csv") # https://github.com/judgelord/dags/blob/main/edges.csv
-node_attributes <- read_csv("node_attributes.csv") # https://github.com/judgelord/dags/blob/main/node_attributes.csv
+# load packages
+library(tidyverse)
+library(netlit) # https://JudgeLord.github.io/netlit/articles/netlit.html
+
+# set margins for plots 
+par(mar=c(0,0,0,0)+.1)
+
+
+# load data for example DAGs
+edges <- read_csv(here::here("edges.csv")) # https://github.com/JudgeLord/dags/blob/main/edges.csv
+node_attributes <- read_csv(here::here("node_attributes.csv")) # https://github.com/JudgeLord/dags/blob/main/node_attributes.csv
 
 # a plot function based on netlit's review() function
 netlit_plot <- function(edges){
@@ -47,24 +56,12 @@ netlit_plot <- function(edges){
     # plot using the default igraph plot function
     plot()
 }
-# (for fancier plots, see see judgelord.github.io/netlit/articles)
+# (for fancier plots, see see JudgeLord.github.io/netlit/articles)
 ```
 
+\noindent **NOTE TO WORKSHOP PARTICIPANTS:** This essay follows from a recent effort to make it easier for scholars to employ graphing and network analysis tools in literature reviews [@Lo2023; @netlit]. Having made it easier to present concepts and arguments as discrete arrows linking discrete concepts, this is my very early and incomplete attempt to reflect on the potential value and pitfalls of doing so. I have some examples from scholarship and some placeholder diagrams. I would love your help identifying examples of prior work where causal diagrams are compatible or incompatible for the reasons listed below (or other reasons!).  I have not thus far devoted much time to reflect in writing on what we are doing as scholars and how we can do it better, so I very much appreciate the organizer's invitation to do so here. 
 
-# Introduction
-# Assessing the generalizability of theories and findings
-# Identifying Gaps in Literatures
-## Identifying Gaps in Cases Studied
-## Identifying Gaps in Methods Employed
-# Talking Past One Another
-# Unstated Assumptions
-# Limitations
-## Subjective Experience
-## Loss of Complexity and Nuance
-# Conclusion
-# Appendix {Appendix}
-
-
+\bigskip
 # Introduction
 
 Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts).^[DAG is also used to describe a directed *acyclic* graphs, a special case where arrows between nodes can point in only one direction. While the acyclic property is extremely important for causal identification (as well as computer operations), it is less important for the applications I discuss here. Indeed, many social science theories posit cyclical relationships, so by DAG, I mean the more general analytic version where arrows can go both ways, also called simply a directed graph. Such visualizations with arrows connecting nodes go by many names in different disciplines, including "influence diagram" in decision analysis and a sub-class of "timeline-based" methods in infographics.] 
@@ -77,7 +74,7 @@ All models and general claims about the social world are necessarily simplificat
 
 In some ways, visualizations like DAGs offer a richer set of tools for presenting explanations than prose, especially for mechanistic explanations. 
 
-My aim in this essay is not to explore the implications of the mechanistic view of the world. Much has been written on this in the philosophy of science literature. For example, @Bechtel2005 contrasts mechanistic explanations with nomological explanations as approaches to scientific representation. I also do not attempt to instruct students on conducting generalizable research or interrogate whether generalizability should be the object of study. 
+My aim in this essay is not to explore the implications of the mechanistic view of the world. Much has been written on this in the philosophy of science literature. For example, @Bechtel2005 contrasts mechanistic explanations with nomological explanations as approaches to scientific representation. In political science @Soss2021 and others have discussed the advantages of the nominal approach. I also do not attempt to instruct students on conducting generalizable research or interrogate whether generalizability should be the object of study. 
 
 My aim is a more limited and practical exploration of the uses and limitations of directed analytic graphs as a tool in the research process. Much of this amounts to recommendations on how to use visual tools to be more explicit, clear, and probing about the relationships among theories and findings. A researcher may often conclude that the contexts or assumptions of prior studies are incommensurate, and generalizing across them is impossible. More likely, these exercises will highlight some points of similarity and other points of difference in cases, concepts, and causal theories. The aim is to help us clarify how the words we use fit into a conceptual schema and the limits of visual schemas for describing our complex world. 
 
@@ -89,15 +86,47 @@ Because the objects of study and potential relationships among them are construc
 
 Similar to how qualitative researchers use participant-drawn diagrams to reveal how different people understand the world, the similarities and differences in the causal models researchers rely upon (explicitly or implicitly) reveal the state of shared understanding in a research community. Models of causal relationships are developed from specific cases and theories. Generalization involves investigating both the similarity of new exemplars to those already studied and the differences between them [@Bechtel2005]. Attempting to consolidate causal theories from various studies into a single DAG can help the congruence of both theory and results. 
 
-The extent to which theories generalize can be revealed by attempting to consolidate the posited relationships among concepts with other theories built in different contexts. The exercise of attempting to combine causal diagrams from multiple studies may provide clarity that is often missing from prose. For example, a narrative description of how a study is integrating insights from previous work might say something like, "We build on how scholar A defines concept X, but incorporating insights from scholar B's concepts about Y. Drawing a diagram of the relationship between X and Y may add clarity to what exactly we mean. Is it that X and Y both belong to a larger conceptual category? Is Y a cause, condition, or effect of X that matters for interpreting X or the relationship of X to other concepts? A diagram can force us to clarify things that language leaves ambiguous.
+The extent to which theories generalize can be revealed by attempting to consolidate the posited relationships among concepts with other theories built in different contexts. The exercise of attempting to combine causal diagrams from multiple studies may provide clarity that is often missing from prose. For example, a narrative description of how a study is integrating insights from previous work might say something like, "We build on how scholar A defines concept X, but incorporating insights from scholar B's concepts about Y. Drawing a diagram of the relationship between X and Y may add clarity to what exactly we mean. Is it that X and Y both belong to a larger conceptual category? Is Y a cause, condition, or effect of X that matters for interpreting X or the relationship of X to other concepts? A diagram can force us to clarify things that language can leave ambiguous.
 
 If theories travel well---that is, they can be integrated with DAGs built to describe other contexts, we can then assess the generalizability of findings across contexts. The extent to which findings generalize can be revealed by comparing findings across studies of the same causal relationship. This is what most meta-analyses of empirical findings aim to do. 
 
 Almost without exception in the social sciences, meta-analyses note the difficulty of comparing findings across studies due to differences in how different studies conceptualize and operationalize variables the meta-analysis seeks to assess. The conjecture of all meta-analyses is that the relationship examined in each study is conceptually the same, and thus the findings are comparable. Stated differently, the theories generalize, and thus, we can assess whether the findings generalize. 
 
-However, to productively employ DAGs to assess generalizability, a student need not conduct a full meta-analysis. Each pairwise comparison of studies presents opportunities to comment on the compatibility of theories. If the theories can be made compatible, and if the studies examine the same arrow between two concepts, then the student can comment on the compatibility of findings. This is the (often implicit) setup of every study that sets out to explain contradictory findings; the conjecture is that the conceptual target is the same and empirical results are different. Formalizing this type of conjecture in a DAG can make such conjectures more explicit.
+## Talking Past One Another
+To productively employ DAGs to assess generalizability, a student need not conduct a full meta-analysis. Each pairwise comparison of studies presents opportunities to comment on the compatibility of theories. If the theories can be made compatible, and if the studies examine the same arrow between two concepts, then the student can comment on the compatibility of findings. This is the (often implicit) setup of every study that sets out to explain contradictory findings; the conjecture is that the conceptual target is the same and empirical results are different. Formalizing this type of conjecture in a DAG can make such conjectures more explicit.
 
-Studies that set out to reconcile contradictory findings often conclude that previous studies arrived at different results because they operationalized (e.g., measured) things differently. Two studies may use the same labels for different things and thus reach opposite conclusions. For example, political scientists, sociologists, and legal scholars debated whether voluntary certification standards had increased or decreased in stringency for decades. Studies came to opposite conclusions about whether stringency was increasing, decreasing, or staying the same because they measured regulatory stringency differently [@judgelord2020]. 
+
+Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." This can occur in several ways. They may be using different words for similar concepts, similar words for different concepts, or different causal models. 
+
+When scholars use different words to describe similar concepts, it will appear in a DAG as two nodes with the same arrows going in from and out to other nodes. 
+
+When scholars use the same word or phrase for different concepts, drawing arrows going in or out of that node becomes difficult. If we consider the phrase as holding one concept, one set of causal relationships makes sense, but when we switch to the other definition, many of those relationships may not make sense. This is a clue that there is ambiguity in the term and a lack of shared understanding.  
+
+Studies that set out to reconcile contradictory findings often conclude that previous studies arrived at different results because they operationalized (e.g., measured) concepts differently. Two studies may use the same labels with different meanings and thus reach opposite conclusions. For example, political scientists, sociologists, and legal scholars debated whether voluntary certification standards had increased or decreased in stringency for decades. Studies came to opposite conclusions about whether stringency was increasing, decreasing, or staying the same because they measured regulatory stringency differently [@JudgeLord2020]. 
+
+Similarly, scholars may compare different causal relationships but use the same labels to describe these relationships. This may occur even when there is agreement on all of the concepts, cases, and overall aim of the study.
+Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. @Balla2020 and @JudgeLord2021 use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 finds that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. @Balla2020 compares agency responses to inside lobbying to responses to outside lobbying, including *within* the same advocacy campaign (comparing the red arrow and blue arrow in figure @fig-rulemaking-1). @JudgeLord2021 compares agency responses only to insider lobbying *across* advocacy campaigns with and without outside lobbying (comparing the red arrows in figure @fig-rulemaking-2 *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the DAG.
+
+```{r}
+#| label: fig-rulemaking
+#| fig-cap: "Two Studies of Policy Influence Comparing Different Relationships Despite Similar Implied DAGs" 
+#| fig-subcap:
+#|   - "Balla et al. 2020" 
+#|   - "Judge-Lord 2021"
+#| layout-ncol: 2
+#| fig-width: 3.5
+#| fig-height: 3.5
+#| fig-cap-location: top
+par(mar=c(0,0,0,0))
+
+filter(edges, cites == "Balla et al. 2020") |>
+  netlit_plot()
+
+filter(edges, cites == "Judge-Lord 2021")  |>
+  netlit_plot()
+```
+
+
 
 # Identifying Gaps in Literatures 
 
@@ -109,23 +138,14 @@ Representing the world as sets of discrete causes, mechanisms, and effects provi
 
 
 ## Identifying Gaps in Cases Studied
-Theoretically, one of the most straightforward research designs is to replicate an existing study in a different context. In practice, studies aimed squarely at replication are rare in social science, and differences in contexts mean that concepts and methods will rarely be deployed in exactly the same way. However, it is nevertheless common to motivate research by commenting on the range of cases where similar relationships have and have not been studied. In "casing" the prior literature (envitably a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies), we make claims about the subjects of inquiry [@Soss2021]. 
+Theoretically, one of the most straightforward research designs is to replicate an existing study in a different context. In practice, studies aimed squarely at replication are rare in social science, and differences in contexts mean that concepts and methods will rarely be deployed in exactly the same way. However, it is nevertheless common to motivate research by commenting on the range of cases where similar relationships have and have not been studied. In "casing" the prior literature (inevitably a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies), we make claims about the subjects of inquiry [@Soss2021]. 
 
 Diagramming the concepts and relationships of interest may allow researchers to comment more explicitly on the range of previous cases in which a particular relationship has and has not been studied. It makes explicit what we are claiming the subjects of prior research were "cases of" by stating which causal relationships we believe were studied and in other contexts. 
 
 ## Identifying Gaps in Methods Employed
-TODO 
-
-# Talking Past One Another
-
-Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." This can occur in several ways. They may be using different words for similar concepts, similar words for different concepts, or different causal models. 
-
-When scholars use different words to describe similar concepts, it will appear in a DAG as two nodes with the same arrows going in from and out to other nodes. 
-
-When scholars use the same word or phrase for different concepts, drawing arrows going in or out of that node becomes difficult. If we consider the phrase as holding one concept, one set of causal relationships makes sense, but when we switch to the other definition, many of those relationships may not make sense. This is a clue that there is ambiguity in the term and a lack of shared understanding.  
+Defining concepts and studying causal relationships can both be done in many ways. We may thus want to summarize how concepts and relationships among them have been explored in prior studies. To visualize the range of methods previously employed to study a relationship, we can include that "metadata" as features of the arrows between concept nodes, for example different colors to represent different combinations of methods. 
 
 
-Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. Both @Balla2020 and @JudgeLord2021 use the same data and discuss their research terms. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 finds that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, they are testing different causal pathways and comparing different things. @Balla2020 compares agency responses to inside lobbying to responses to outside lobbying, including *within* the same broader advocacy campaign (comparing the two red arrows in figure @fig. @JudgeLord2021 compares agency responses to insider lobbying only *across* advocacy campaigns with more and less outside lobbying (comparing the red arrows in figure @fig *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the DAG.
 # Unstated Assumptions 
 
 Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city's drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control. Another social scientist might draw a diagram pointing from the downstream community to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water. Each model assumes a set of social responsibilities and appropriate modes of control.
@@ -142,7 +162,7 @@ However, DAGs can be a tool to systematically gather data on the subjective unde
 
 ## Loss of Complexity and Nuance
 
-Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows. 
+Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows, especially if the aim is to develop general models.
 
 # Conclusion
 
@@ -151,34 +171,33 @@ Conceptual complexity and nuance possible in prose are necessarily lost in trans
 
 ## Code
 
-All plots in this paper used the `netlit` R package introduced in @Lo2023 (available at https://judgelord.github.io/netlit), example data available at https://github.com/judgelord/dags, and the following plot function: 
+All plots in this paper used the `netlit` R package introduced in @Lo2023 (available at https://JudgeLord.github.io/netlit), example data available at https://github.com/JudgeLord/dags, and the following plot function: 
 
 ```
 # load data for example DAGs
-edges <- read_csv("edges.csv") # https://github.com/judgelord/dags/blob/main/edges.csv
-node_attributes <- read_csv("node_attributes.csv") # https://github.com/judgelord/dags/blob/main/node_attributes.csv
+edges <- read_csv(here::here("edges.csv")) # https://github.com/JudgeLord/dags/blob/main/edges.csv
+node_attributes <- read_csv(here::here("node_attributes.csv")) # https://github.com/JudgeLord/dags/blob/main/node_attributes.csv
 
 # a plot function based on netlit's review() function
 netlit_plot <- function(edges){
   # create a graph with netlit's review() function
-  netlit::review(edges,
-                 edge_attributes = names(edges),
-                 node_attributes = node_attributes
-                 ) |>
+  netlit::review(edges, 
+                 edge_attributes = "color",
+                 node_attributes = node_attributes) |>
     # pluck out the graph object
     pluck("graph") |>
     # plot using the default igraph plot function
-    plot()
+    plot(margin=0)
 }
-
-# (for fancier plots, see see judgelord.github.io/netlit/articles)
 ```
 
-
+For fancier plots, see https://judgelord.github.io/netlit/articles/netlit.html.
 <!--The democratic peace hypothesis from Gartzke1998.-->
 
 
 ### References 
+
+
 
 
 
