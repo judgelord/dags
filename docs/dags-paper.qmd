@@ -173,7 +173,7 @@ Conceptual complexity and nuance possible in prose are necessarily lost in trans
 
 ## Code
 
-All plots in this paper used the `netlit` R package introduced in @Lo2023 (available at https://JudgeLord.github.io/netlit), example data available at https://github.com/JudgeLord/dags, and the following plot function: 
+All plots in this paper used the `netlit` R package introduced in @Lo2023 (available at <https://JudgeLord.github.io/netlit>), example data available at <https://github.com/JudgeLord/dags>, and the following plot function: 
 
 ```
 # load data for example DAGs
