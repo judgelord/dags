@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Devin Judge-Lord">
-<meta name="dcterms.date" content="2023-10-06">
+<meta name="dcterms.date" content="2023-10-12">
 <meta name="keywords" content="Directed Analytic Graphs, literature review, causal relationships, generalizability, shared meaning">
 
 <title>Uses and Limits of Directed Analytic Graphs Beyond Causal Designs in Social Science</title>
@@ -91,7 +91,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 6, 2023</p>
+      <p class="date">October 12, 2023</p>
     </div>
   </div>
   
@@ -149,12 +149,12 @@ NOTE TO WORKSHOP PARTICIPANTS
 <div id="fig-forestry" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <figcaption class="figure-caption">Figure&nbsp;1: Two Studies of the Effect of Regulatory Stringency on Sustainable Forestry Use Different Concepts (Red and Blue Nodes)</figcaption>
-<p><img src="dags-paper_files/figure-html/fig-forestry-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="dags-paper_files/figure-html/fig-forestry-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>Similarly, scholars may compare different causal relationships but use the same labels to describe these relationships. This may occur even when there is agreement on all of the concepts, cases, and overall aim of the study. Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of “outside lobbying,” affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> finds that more public comments do not help, but <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> compares agency responses to inside lobbying to responses to outside lobbying, including <em>within</em> the same advocacy campaign (comparing the red arrow and blue arrow in <a href="#fig-rulemaking-1">Figure&nbsp;2 (a)</a>). <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> compares agency responses only to insider lobbying <em>across</em> advocacy campaigns with and without outside lobbying (comparing the red arrows in <a href="#fig-rulemaking-2">Figure&nbsp;2 (b)</a> <em>across</em> cases). This is an example of two studies talking past each other that becomes clear when we draw the DAG.</p>
+<p>Similarly, scholars may compare different causal relationships but use the same labels to describe these relationships. This may occur even when there is agreement on all of the concepts, cases, and overall aim of the study. Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of “outside lobbying,” affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> find that more public comments do not help, but <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> compare agency responses to inside lobbying to responses to outside lobbying, including <em>within</em> the same advocacy campaign (comparing the red arrow and blue arrow in <a href="#fig-rulemaking-1">Figure&nbsp;2 (a)</a>). <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> compares agency responses only to insider lobbying <em>across</em> advocacy campaigns with and without outside lobbying (comparing the red arrows in <a href="#fig-rulemaking-2">Figure&nbsp;2 (b)</a> <em>across</em> cases). This is an example of two studies talking past each other that becomes clear when we draw the DAG.</p>
 <div id="fig-rulemaking" class="cell fig-cap-location-top quarto-layout-panel">
 <p></p><figcaption>Figure&nbsp;2: Two Studies of Policy Influence Comparing Different Relationships Despite Similar Implied DAGs</figcaption><p></p>
 <figure class="figure">
@@ -178,7 +178,7 @@ NOTE TO WORKSHOP PARTICIPANTS
 </div>
 </figure>
 </div>
-<p>The exercises of comparing and attempting to integrate the two DAGs in <a href="#fig-rulemaking-1">Figure&nbsp;2 (a)</a> and <a href="#fig-rulemaking-2">Figure&nbsp;2 (b)</a> raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the DAGs helps with this kind of assessment. In more complex DAGs, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using “degree centrality” measures returned by graphing tools like <code>netlit</code>. Table <a href="#tbl-rulemaking">Table&nbsp;1</a> shows that the perceived legitimacy of inside advocacy tactics is more central to the theory in <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> (with total degree central of 3) than in <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> (with total degree central of 2).</p>
+<p>The exercises of comparing and attempting to integrate the two DAGs in <a href="#fig-rulemaking-1">Figure&nbsp;2 (a)</a> and <a href="#fig-rulemaking-2">Figure&nbsp;2 (b)</a> raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims in <a href="#fig-rulemaking-1">Figure&nbsp;2 (a)</a>. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the DAGs helps with this kind of assessment. In more complex DAGs, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using “degree centrality” measures returned by graphing tools like <code>netlit</code>. Table <a href="#tbl-rulemaking">Table&nbsp;1</a> shows that the perceived legitimacy of inside advocacy tactics is more central to the theory in <span class="citation" data-cites="JudgeLord2021">Judge-Lord (<a href="#ref-JudgeLord2021" role="doc-biblioref">2021</a>)</span> (with total degree central of 3) than in <span class="citation" data-cites="Balla2020">Balla et al. (<a href="#ref-Balla2020" role="doc-biblioref">2020</a>)</span> (with total degree central of 2).</p>
 <div class="cell fig-cap-location-top">
 <div class="cell-output-display">
 <div id="tbl-rulemaking" class="anchored">
@@ -232,16 +232,22 @@ NOTE TO WORKSHOP PARTICIPANTS
 </div>
 </div>
 </div>
-<p>Second, visualizing the causal models implied by these two studies reveals that, despite aiming to study the same thing, they are comparing different things. Students might ask which set of casual relationships ought to be compared better answers the question. In some cases, we may conclude that some previous scholars have been comparing the wrong things. Other times, we may conclude that there are multiple valuable interpretations of a question—both sets of scholarship may be right, just talking past each other. DAGs may help clarify such ambiguity.</p>
+<p>Second, visualizing the causal models implied by these two studies reveals that, despite aiming to study the same thing, they are comparing different things. Students might ask which comparisons best answer the question. In some cases, we may conclude that previous studies have been comparing the wrong things. Other times, we may conclude that there are multiple valuable interpretations of a question—both sets of scholarship may be right, just talking past each other. DAGs may help clarify such ambiguity.</p>
 </section>
 </section>
 <section id="identifying-gaps-in-literatures" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Identifying Gaps in Literatures</h1>
-<p>Where meaning is shared, students might use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. For example, the two studies shown in <a href="#fig-rulemaking">Figure&nbsp;2</a> generally agree on the causal model, use similar data, and similar methods. However, neither study examined the advocate’s choice to use inside or outside lobbying tactics. A broader review of the literature will find little written about the context of US agency policymaking. Likewise, the cases for both studies are federal agency rules. A broader review of the literature will find almost no parallel research on state agency rules. Finally, a review</p>
+<p>Where meaning is shared, students might use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. For example, the two studies shown in <a href="#fig-rulemaking">Figure&nbsp;2</a> generally agree on the causal model, use similar data, and similar methods. However, neither study examined the advocate’s choice to use inside or outside lobbying tactics. A broader review of the literature will find little written about this in the context of US agency policymaking. Likewise, the cases for both studies are federal agency rules. A broader review of the literature will find almost no parallel research on state agency rules.</p>
 <section id="identifying-gaps-in-relationships-studied" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="identifying-gaps-in-relationships-studied"><span class="header-section-number">3.1</span> Identifying Gaps in Relationships Studied</h2>
 <p>Representing the world as sets of discrete causes, mechanisms, and effects provides direction to both the discovery and testing of mechanistic explanations. Mapping out hypothesized causal chains and mechanisms involves developing organized systems of component parts <span class="citation" data-cites="Bechtel2005">(<a href="#ref-Bechtel2005" role="doc-biblioref">Bechtel and Abrahamsen 2005</a>)</span>. Each part of a hypothesized causal chain can then be studied with a research design tailored to that narrow task situated within a larger research agenda and picture of the world. This broader picture of the world is what we craft when we review the prior literature.</p>
-<p>Diagramming our understanding of theorized concepts and relationships can reveal two broad types of “gaps” that one might identify in a review of prior work: gaps in theory and gaps in the empirical study of theorized relationships. Gaps in theory appear in a graph as a missing connection between concepts that, upon reflection, may be worth theorizing. Gaps in empirical studies appear when we visually distinguish relationships that have been studied from those that have only been theorized.</p>
+<p>Diagramming our understanding of theorized concepts and relationships can reveal two broad types of “gaps” that one might identify in a review of prior work: gaps in theory and gaps in the empirical study of theorized relationships. Gaps in theory appear in a graph as a missing connection between concepts that, upon reflection, may be worth theorizing. Gaps in empirical studies appear when we visually distinguish relationships that have been studied from those that have only been theorized. For example, <span class="citation" data-cites="Lo2023">Lo et al. (<a href="#ref-Lo2023" role="doc-biblioref">2023</a>)</span> review the literature on redistricting in the U.S., distinguishing relationships that have been studied empirically (the solid arrows in <a href="#fig-redistricting">Figure&nbsp;3</a>) from those that have only been theorized (the dashed arrows in <a href="#fig-redistricting">Figure&nbsp;3</a>). This figure also highlights relationships most central to the existing literature using a graph statistic (edge betweenness) to give arrows that are part of more causal chains a darker shade.</p>
+<div id="fig-redistricting" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<figcaption class="figure-caption">Figure&nbsp;3: A DAG of the U.S. Redistricting Literature from Lo et al.&nbsp;(2023)</figcaption>
+<p><img src="https://judgelord.github.io/netlit/reference/figures/ggraph-edge-betweenness-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </section>
 <section id="identifying-gaps-in-cases-studied" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="identifying-gaps-in-cases-studied"><span class="header-section-number">3.2</span> Identifying Gaps in Cases Studied</h2>
@@ -255,9 +261,9 @@ NOTE TO WORKSHOP PARTICIPANTS
 </section>
 <section id="unstated-assumptions" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Unstated Assumptions</h1>
-<p>Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city’s drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control (<a href="#fig-river-1">Figure&nbsp;3 (a)</a>). Another social scientist might draw a diagram pointing from the downstream city to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water (<a href="#fig-river-2">Figure&nbsp;3 (b)</a>). Each model assumes a set of social responsibilities and appropriate modes of control.</p>
+<p>Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city’s drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control (<a href="#fig-river-1">Figure&nbsp;4 (a)</a>). Another social scientist might draw a diagram pointing from the downstream city to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water (<a href="#fig-river-2">Figure&nbsp;4 (b)</a>). Each model assumes a set of social responsibilities and appropriate modes of control.</p>
 <div id="fig-river" class="cell fig-cap-location-top quarto-layout-panel">
-<p></p><figcaption>Figure&nbsp;3: Two Causal Models Highlight Different Political Assumptions About Responsiblity and Control</figcaption><p></p>
+<p></p><figcaption>Figure&nbsp;4: Two Causal Models Highlight Different Political Assumptions About Responsiblity and Control</figcaption><p></p>
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
@@ -292,34 +298,31 @@ NOTE TO WORKSHOP PARTICIPANTS
 <section id="loss-of-complexity-and-nuance" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="loss-of-complexity-and-nuance"><span class="header-section-number">5.2</span> Loss of Complexity and Nuance</h2>
 <p>Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows, especially if the aim is to develop general models. Indeed, much of the confusion discussed above resulting from scholars “talking past each other” or using incommensurate models results from words or phrases being taken out of context. In the context of the prose of each study, the definitions of the concepts usually make sense. Confusion arises when we take claims out of this context and set them alongside other studies that use similar words or phrases with different meanings. On the one hand, reconciling conflicting meanings of concepts can resolve ambiguity and contribute toward generalization. On the other hand, doing so may involve abandoning the complexity and nuance that a scholar meant when they developed or adopted a concept to describe a particular set of cases.</p>
+<!--# Conclusion -->
+<div style="page-break-after: always;"></div>
 </section>
-</section>
-<section id="conclusion" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Conclusion</h1>
 </section>
 <section id="appendix" class="level1 unnumbered">
 <h1 class="unnumbered">Appendix</h1>
-<section id="code" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="code"><span class="header-section-number">6.1</span> Code</h2>
+<section id="code" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="code"><span class="header-section-number">5.3</span> Code</h2>
 <p>All plots in this paper used the <code>netlit</code> R package introduced in <span class="citation" data-cites="Lo2023">Lo et al. (<a href="#ref-Lo2023" role="doc-biblioref">2023</a>)</span> (available at <a href="https://JudgeLord.github.io/netlit" class="uri">https://JudgeLord.github.io/netlit</a>), example data available at <a href="https://github.com/JudgeLord/dags" class="uri">https://github.com/JudgeLord/dags</a>, and the following plot function:</p>
 <pre><code># load data for example DAGs
-edges &lt;- read_csv(here::here("edges.csv")) # https://github.com/JudgeLord/dags/blob/main/edges.csv
-node_attributes &lt;- read_csv(here::here("node_attributes.csv")) # https://github.com/JudgeLord/dags/blob/main/node_attributes.csv
+edges &lt;- read_csv("https://github.com/JudgeLord/dags/blob/main/edges.csv")
+node_attributes &lt;- read_csv("https://github.com/JudgeLord/dags/blob/main/node_attributes.csv")
 
-# a plot function based on netlit's review() function
-netlit_plot &lt;- function(edges){
-  # create a graph with netlit's review() function
+# create a graph with netlit's review() function
   netlit::review(edges, 
                  edge_attributes = "color",
                  node_attributes = node_attributes) |&gt;
     # pluck out the graph object
     pluck("graph") |&gt;
     # plot using the default igraph plot function
-    plot(margin=0)
-}</code></pre>
-<p>For fancier plots, see see &lt;JudgeLord.github.io/netlit/articles&gt;</p>
+    plot(margin=0)</code></pre>
+<p>For fancier plots, see <a href="https://judgelord.github.io/netlit/articles/">JudgeLord.github.io/netlit/articles</a>.</p>
 <!--The democratic peace hypothesis from Gartzke1998.-->
-<section id="references" class="level3 unnumbered" data-number="6.1.1">
+<div style="page-break-after: always;"></div>
+<section id="references" class="level3 unnumbered" data-number="5.3.1">
 
 
 </section>
@@ -327,7 +330,7 @@ netlit_plot &lt;- function(edges){
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">6.1.1 References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">5.3.1 References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-Balla2020" class="csl-entry" role="listitem">
 Balla, Steven J., Alexander R. Beck, Elizabeth Meehan, and Aryamala Prasad. 2020. <span>“Lost in the Flood?: Agency Responsiveness to Mass Comment Campaigns in Administrative Rulemaking.”</span> <em>Regulation <span>&amp;</span> Governance</em>.
 </div>
