@@ -2,8 +2,8 @@
 editor: source
 format:
   #docx: default
-  pdf
   #html
+  pdf
 linestretch: 1.5
 indent: true
 number-sections: true
@@ -56,19 +56,22 @@ netlit_plot <- function(edges){
 }
 ```
 
+::: {.callout-warning  title="Updated \today"  icon=true}
+ The most recent draft is here: [judgelord.github.io/dags](https://judgelord.github.io/dags).
+:::
+
 \newpage
 
 ::: {.callout-note  title="NOTE TO WORKSHOP PARTICIPANTS"  icon=false}
-This essay follows from a recent effort to make it easier for scholars to employ graphing and network analysis tools in literature reviews [@Lo2023; @netlit]. Having made it easier to present concepts and arguments as discrete arrows linking discrete concepts, this is my very early and incomplete attempt to reflect on the potential value and pitfalls of doing so. The most recent draft is here: [judgelord.github.io/dags](https://judgelord.github.io/dags). I have some placeholder diagrams. I would love your help identifying examples of prior scholarship where causal diagrams are compatible or incompatible for the reasons listed below (or other reasons!).  I have not thus far devoted much time to reflect in writing on what we are doing as scholars and how we can do it better, so I very much appreciate the organizer's invitation to do so here. 
-
+This essay follows from a recent effort to make it easier for scholars to employ graphing and network analysis tools in literature reviews [@Lo2023; @netlit]. Having made it easier to present concepts and arguments as discrete arrows linking discrete concepts, this is my very early and incomplete attempt to reflect on the potential value and pitfalls of doing so. I have some placeholder diagrams. I would love your help identifying examples of prior scholarship where causal diagrams are compatible or incompatible for the reasons listed below (or other reasons!).  I have not thus far devoted much time to reflect in writing on what we are doing as scholars and how we can do it better, so I very much appreciate the organizer's invitation to do so here. 
 :::
 
 \bigskip
 # Introduction
 
-Humans have used diagrams as long or longer than written language. They are a common feature of science. Two recent developments make them worth attention. First, they are increasingly common in social science focused on causal identification, such as experimental designs and process tracing. Second, visualization tools have become much easier to use due to advances in network analysis.  Computers can now quickly produce diagrams and network statistics about the relationships with relatively minimal input [@Lo2023].  As these powerful tools become easier to use, it is a good time to examine their uses beyond causal designs and network analysis. 
+Humans have used diagrams as long or longer than written language, and they are a common feature of science writing. Two recent developments make them worth attention. First, they are increasingly common in social science focused on causal identification, such as experimental designs and process tracing. Second, visualization tools have become much easier to use due to advances in network analysis.  Computers can now quickly produce diagrams and network statistics about the relationships with relatively minimal input [@Lo2023].  As these powerful tools become easier to use, it is a good time to examine their uses beyond causal designs and network analysis. 
 
-Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts).^[DAG is also used to describe a directed *acyclic* graphs, a special case where arrows between nodes can point in only one direction. While the acyclic property is extremely important for causal identification (as well as computer operations), it is less important for the applications I discuss here. Indeed, many social science theories posit cyclical relationships, so by DAG, I mean the more general analytic version where arrows can go both ways, also called simply a directed graph. Such visualizations with arrows connecting nodes go by many names in different disciplines, including "influence diagram" in decision analysis and a sub-class of "timeline-based" methods in infographics.] 
+Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts).^[DAG is also used to describe a Directed *Acyclic* Graph, a special case where arrows between nodes can point in only one direction. While the acyclic property is extremely important for causal identification (as well as computer operations), it is less important for the applications I discuss here. Indeed, many social science theories posit cyclical relationships, so by "DAG," I mean a more general Directed *Analytic* Graph where arrows can go both ways, also called simply a directed graph. Such visualizations with arrows connecting nodes go by many names in different disciplines, including "influence diagram" in decision analysis and a sub-class of "timeline-based" methods in infographics.] 
 The “experimental turn” in social science and increased emphasis on causal identification have increased the prevalence of figures featuring arrows representing causal relationships among variables. Likewise, such figures are common in studies using process tracing methods.  Even where causality is not identified, most quantitative and qualitative research claims can be visualized as (potentially causal) relationships among concepts [@Lo2023].
 
 Qualitative researchers have productively employed directed graphs in a toolkit of research methods known as participant-led diagramming or graphic elicitation [@Bravington2018]. Many qualitative research tools ask participants to draw their understanding of places or events. One application of drawing exercises is to elicit beliefs about casual relationships from participants by asking them to draw diagrams with arrows. Among other purposes, these methods allow researchers to assess the extent to which understandings of causal relationships among people and events are shared among participants. For example, a researcher might compare participants' understandings of the timeline of events or the critical junctures. 
@@ -111,9 +114,8 @@ Studies that set out to reconcile contradictory findings often conclude that pre
 ```{r forestry}
 #| label: fig-forestry
 #| fig-cap: "Two Studies of the Effect of Regulatory Stringency on Sustainable Forestry Use Different Concepts (Red and Blue Nodes)" 
-#| fig-width: 6
-#| fig-height: 6
-#| fig-cap-location: top
+#| fig-width: 4
+#| fig-height: 4
 
 par(mar=c(0,0,0,0))
 
