@@ -1,6 +1,8 @@
 ---
-title: Literature Review as Casing and Diagraming # Generalization Interrorgation #Uses and Limits of Directed Analytic Graphs Beyond Causal Designs in Social Science
-subtitle:  Using qualitative and quantative research methods to clarify our conjectures about others' arguments and evidence 
+title: Literature Review as Casing and Diagraming 
+# Generalization Interrorgation #Uses and Limits of Directed Analytic Graphs Beyond Causal Designs in Social Science
+subtitle: Using qualitative and quantative research methods for inference about existing arguments and evidence
+# subtitle:  Using qualitative and quantative research methods to clarify our conjectures about others' arguments and evidence 
 Runningtitle: Literature Review as as Casing and Diagraming #Uses and Limits of DAGs
 runningauthor: Devin Judge-Lord
 author:
@@ -121,7 +123,7 @@ This section summarizes @Lo2023 in the language of "casing" a literature.
 
 # Assessing the generalizability of theories and findings
 
-Because the objects of study and potential relationships among them are constructed by research communities, DAGs can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Scholars may be operating with similar definitions if the words and arrows align. If not, they may be using the same language to talk about different concepts.  
+Because the objects of study and potential relationships among them are constructed by research communities, diograms can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Scholars may be operating with similar definitions if the words and arrows align. If not, they may be using the same language to talk about different concepts.  
 
 Similar to how qualitative researchers use participant-drawn diagrams to reveal how different people understand the world, the similarities and differences in the causal models researchers rely upon (explicitly or implicitly) reveal the state of shared understanding in a research community. Models of causal relationships are developed from specific cases and theories. Generalization involves investigating both the similarity of new exemplars to those already studied and the differences between them [@Bechtel2005]. Attempting to consolidate causal theories from various studies into a single DAG can help the congruence of both theory and results. 
 
@@ -129,7 +131,7 @@ The extent to which theories generalize can be revealed by attempting to consoli
 
 ## What does it mean for a theory or findings to travel? 
 
-If theories travel well---that is, they can be integrated with DAGs built to describe other contexts, we can then assess the generalizability of findings across contexts. The extent to which findings generalize can be revealed by comparing findings across studies of the same causal relationship. This is what most meta-analyses of empirical findings aim to do. 
+If theories travel well---that is, they can be integrated with diograms built to describe other contexts, we can then assess the generalizability of findings across contexts. The extent to which findings generalize can be revealed by comparing findings across studies of the same causal relationship. This is what most meta-analyses of empirical findings aim to do. 
 
 **Casing** Almost without exception in the social sciences, meta-analyses note the difficulty of comparing findings across studies due to differences in how different studies conceptualize and operationalize variables the meta-analysis seeks to assess. The conjecture of all meta-analyses is that the relationship examined in each study is conceptually the same, and thus the findings are comparable. Stated differently, in order to assess whether the findings generalize, the we must assert that the concepts generalize. 
 
@@ -143,20 +145,20 @@ To construct a diogram representing prior work,  we must choose to assign the ke
 
 ## Talking Past One Another
 
-To productively employ DAGs to assess generalizability, a student need not conduct a full meta-analysis. Each pairwise comparison of studies presents opportunities to comment on the compatibility of theories. If the theories can be made compatible, and if the studies examine the same arrow between two concepts, then the student can comment on the compatibility of findings. This is the (often implicit) setup of every study that sets out to explain contradictory findings; the conjecture is that the conceptual target is the same and empirical results are different. Formalizing this type of conjecture in a DAG can make such conjectures more explicit.
+To productively employ diograms to assess generalizability, a student need not conduct a full meta-analysis. Each pairwise comparison of studies presents opportunities to comment on the compatibility of theories. If the theories can be made compatible, and if the studies examine the same arrow between two concepts, then the student can comment on the compatibility of findings. This is the (often implicit) setup of every study that sets out to explain contradictory findings; the conjecture is that the conceptual target is the same and empirical results are different. Formalizing this type of conjecture in a diogram can make such conjectures more explicit.
 
 
 Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." This can occur in several ways. They may be using different words for similar concepts, similar words for different concepts, or different causal models. 
 
 ### Concept-label mismatch
 
-When scholars use different words to describe similar concepts, it will appear in a DAG as two nodes with the same arrows going in from and out to other nodes. 
+When scholars use different words to describe similar concepts, it will appear in a diogram as two nodes with the same arrows going in from and out to other nodes. 
 
 When scholars use the same word or phrase for different concepts, drawing arrows going in or out of that node becomes difficult. When a phrase holds one concept, one set of causal relationships makes sense, but when we switch to the other definition, many of those relationships may not make sense. This is a clue that there is ambiguity in the term and a lack of shared understanding.  
 
 Studies that set out to reconcile contradictory findings often conclude that previous studies arrived at different results because they operationalized (e.g., measured) concepts differently. Two studies may use the same labels with different meanings and thus reach opposite conclusions. For example, political scientists, sociologists, and legal scholars debated whether voluntary certification standards had increased or decreased in stringency for decades. Studies came to opposite conclusions about whether stringency was increasing, decreasing, or staying the same because they measured regulatory stringency differently [@JudgeLord2020]. In @fig-forestry, the blue nodes represent measures used by @Cashore2004, and the red nodes represent measures used by @Overdevest2014 to arrive at opposing conclusions. 
 
-```{r forestry}
+```{r}
 #| label: fig-forestry
 #| fig-cap: "Two Studies of the Effect of Regulatory Stringency on Sustainable Forestry Use Different Concepts (Red and Blue Nodes)" 
 #| fig-width: 5
@@ -176,7 +178,7 @@ filter(edges, case == "forestry") |>
 Similarly, scholars may compare different causal relationships but use the same labels to describe these relationships. This may occur even when there is agreement on all of the concepts, cases, and overall aim of the study.
 
 
-Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. @Balla2020 and @JudgeLord2021 use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 find that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. @Balla2020 compare agency responses to inside lobbying to responses to outside lobbying, including *within* the same advocacy campaign (comparing the red arrow and blue arrow in @fig-rulemaking-1). @JudgeLord2021 compares agency responses only to insider lobbying *across* advocacy campaigns with and without outside lobbying (comparing the red arrows in @fig-rulemaking-2 *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the DAG.
+Consider two studies aimed at assessing the effects of advocacy campaigns on US federal agency policy. @Balla2020 and @JudgeLord2021 use the same data and discuss their research in the same terms, i.e., they agree on the cases and concepts. Both aim to assess whether mass comment campaigns, as one form of "outside lobbying," affect agency policy. They both look at agency responses to public comments as a measure of whether outside tactics help advocacy campaigns. Yet they come to opposite results. @Balla2020 find that more public comments do not help, but @JudgeLord2021 finds that they do. However, when we look closely at the DAGs implied by each study, we see that, despite using similar language, their causal models are slightly different, and they compare different pairs of relationships. @Balla2020 compare agency responses to inside lobbying to responses to outside lobbying, including *within* the same advocacy campaign (comparing the red arrow and blue arrow in @fig-rulemaking-1). @JudgeLord2021 compares agency responses only to insider lobbying *across* advocacy campaigns with and without outside lobbying (comparing the red arrows in @fig-rulemaking-2 *across* cases).  This is an example of two studies talking past each other that becomes clear when we draw the diogram.
 
 ```{r}
 #| label: fig-rulemaking
@@ -201,7 +203,7 @@ filter(edges, cites == "Judge-Lord 2021")  |>
 
 
 
-The exercises of comparing and attempting to integrate the two DAGs in @fig-rulemaking-1 and @fig-rulemaking-2 raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims in @fig-rulemaking-1. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the DAGs helps with this kind of assessment. In more complex DAGs, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using "degree centrality" measures returned by graphing tools like `netlit`. Table @tbl-rulemaking shows that the perceived legitimacy of inside advocacy tactics is more central to the theory in @JudgeLord2021 (with total degree central of 3) than in @Balla2020  (with total degree central of 2).
+The exercises of comparing and attempting to integrate the two DAGs in @fig-rulemaking-1 and @fig-rulemaking-2 raises at least two productive questions. First, there is an extra node (concept) about the perceived legitimacy of outside advocacy claims in @fig-rulemaking-1. A student might ask why this concept is included in one study and not in the other. More generally, we should ask why some concepts a featured in many studies and others are featured in few. Integrating the diograms helps with this kind of assessment. In more complex diagrams, we might also question why some concepts are more central and others more peripheral to the set of causal relationships thus far explored by using "degree centrality" measures returned by graphing tools like `netlit`. Table @tbl-rulemaking shows that the perceived legitimacy of inside advocacy tactics is more central to the theory in @JudgeLord2021 (with total degree central of 3) than in @Balla2020  (with total degree central of 2).
 
 ```{r}
 #| label: tbl-rulemaking
@@ -223,7 +225,7 @@ b <- filter(edges, cites == "Judge-Lord 2021")  |>
 full_join(a, b) |> knitr::kable()
 ```
 
-Second, visualizing the causal models implied by these two studies reveals that, despite aiming to study the same thing, they are comparing different things. Students might ask which comparisons best answer the question. In some cases, we may conclude that previous studies have been comparing the wrong things. Other times, we may conclude that there are multiple valuable interpretations of a question---both sets of scholarship may be right, just talking past each other. DAGs may help clarify such ambiguity. 
+Second, visualizing the causal models implied by these two studies reveals that, despite aiming to study the same thing, they are comparing different things. Students might ask which comparisons best answer the question. In some cases, we may conclude that previous studies have been comparing the wrong things. Other times, we may conclude that there are multiple valuable interpretations of a question---both sets of scholarship may be right, just talking past each other. Diagrams may help clarify such ambiguity. 
 
 
 
@@ -236,7 +238,7 @@ Deductive work confronts these same mismatches when it attempts to "operationali
 
 # Identifying Gaps in Literatures 
 
-Where meaning is shared, students might use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. For example, the two studies shown in @fig-rulemaking generally agree on the causal model, use similar data, and similar methods. However, neither study examined the advocate's choice to use inside or outside lobbying tactics. A broader review of the literature will find little written about this in the context of US agency policymaking. Likewise, the cases for both studies are federal agency rules. A broader review of the literature will find almost no parallel research on state agency rules. 
+Where meaning is shared, students might use diagrams to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. For example, the two studies shown in @fig-rulemaking generally agree on the causal model, use similar data, and similar methods. However, neither study examined the advocate's choice to use inside or outside lobbying tactics. A broader review of the literature will find little written about this in the context of US agency policymaking. Likewise, the cases for both studies are federal agency rules. A broader review of the literature will find almost no parallel research on state agency rules. 
 
 
 
@@ -252,7 +254,7 @@ Gaps in theory may appear in a graph as a missing connection between concepts th
 
 ### Gaps in evidence 
 
- Gaps in empirical studies appear when we visually distinguish relationships that have been studied from those that have only been theorized. For example, @Lo2023 review the literature on redistricting in the U.S., distinguishing relationships that have been studied empirically (the solid arrows in @fig-redistricting) from those that have only been theorized (the dashed arrows in @fig-confound). For example, @fig-confound shows an example where redistricting that better preserved communities of interest was theorized to reduce voter rolloff (voting for only the first few positions on a ballot) both directly and also indirectly by preserving voter information about their district. However, @Low2023 only found empirical evidence the second part of the indirect effect. None of the research reviewed had studied the relationship between preserving communities and voter information about their district. This gap meant that all empirical work suffered from confounding, either from omitted variable or collider bias. 
+ Gaps in empirical studies appear when we visually distinguish relationships that have been studied from those that have only been theorized. For example, @Lo2023 review the literature on redistricting in the U.S., distinguishing relationships that have been studied empirically (the solid arrows in @fig-confound) from those that have only been theorized (the dashed arrows in @fig-confound). For example, @fig-confound shows an example where redistricting that better preserved communities of interest was theorized to reduce voter rolloff (voting for only the first few positions on a ballot) both directly and also indirectly by preserving voter information about their district. However, @Low2023 only found empirical evidence the second part of the indirect effect. None of the research reviewed had studied the relationship between preserving communities and voter information about their district. This gap meant that all empirical work suffered from confounding, either from omitted variable or collider bias. 
 
 ```{r}
 #| label: fig-confound
@@ -311,9 +313,9 @@ There are well-noted limitations to mechanistic descriptions of the world.
 
 ## Subjective Experience
 
-DAGs are poor tools for communicating a researcher's subjective experiences. DAGs present the world as mechanistic. For the same reason that a machine is a useful metaphor for simplifying and developing a shared understanding of the world, it also deemphasizes subjective experience. A causal diagram focuses on a process that exists out there in the world, rather than an experience. Focusing on the *sequence* of events may deemphasize how people, including researchers, *feel* about those events.
+Diograms may be poor tools for communicating a researcher's subjective experiences. Diograms present the world as mechanistic. For the same reason that a machine is a useful metaphor for simplifying and developing a shared understanding of the world, it also deemphasizes subjective experience. A causal diagram focuses on a process that exists out there in the world, rather than an experience. Focusing on the *sequence* of events may deemphasize how people, including researchers, *feel* about those events.
 
-However, DAGs can be a tool to systematically gather data on the subjective understandings of causal relationships [@Bravington2018]. In the same way that formalizing claims about research findings can highlight places where scholars share or lack meaning, qualitative researchers use DAGs as a research tool to elicit participants' understandings of causal relationships. For example, a researcher might ask participants to draw their understanding of the chain of events or to draw arrows connecting events of interest. This method is known as "graphic elicitation" [@Bravington2018].
+However, diagrams can be a tool to systematically gather data on the subjective understandings of causal relationships [@Bravington2018]. In the same way that formalizing claims about research findings can highlight places where scholars share or lack meaning, qualitative researchers use diagrams as a research tool to elicit participants' understandings of causal relationships. For example, a researcher might ask participants to draw their understanding of the chain of events or to draw arrows connecting events of interest. This method is known as "graphic elicitation" [@Bravington2018].
 
 While @Bravington2018 emphasizes the abilities of diagrams to capture subjective experience, they are still limited to a mechanistic representation. In their example, emotion might be represented spatially on the vertical of a timeline. While useful, this type of representation still flattens experience. 
 
