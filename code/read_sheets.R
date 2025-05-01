@@ -1,6 +1,6 @@
 # this script reads edges and nodes from a google sheet
 library(devtools)
-install_github("judgelord/netlit")
+# install_github("judgelord/netlit")
 
 
 library(netlit)
@@ -53,6 +53,10 @@ netlit_plot <- function(edges){
 }
 # (for fancier plots, see see judgelord.github.io/netlit/articles)
 
+par(mar=c(0,0,0,0))
+
+filter(edges, case == "forestry") |>
+  netlit_plot()
 
 filter(edges, cites == "Judge-Lord 2021")  |>
   netlit_plot()
