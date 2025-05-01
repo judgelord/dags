@@ -67,3 +67,6 @@ filter(edges, cites == "river-state") |>
 filter(edges, cites == "river-city")  |>
   netlit_plot()
 
+filter(edges, cites == "landholding")  |>
+  netlit_plot()
+
