@@ -13,8 +13,8 @@ edges <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "edg
   drop_na(from)
 
 edges |>
-  mutate(from = from |> str_replace_all(" ", "\n"),
-         to = to |> str_replace_all(" ", "\n"),
+  mutate(from = from |> str_replace_all(" ", "\n") |> str_to_sentence(),
+         to = to |> str_replace_all(" ", "\n") |> str_to_sentence(),,
          # colorblind friendly
          color = str_replace(color, "blue", "#3B99B1"),
          color = str_replace(color, "red", "#F5191C")) |>
@@ -25,7 +25,7 @@ node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sh
   drop_na(node)
 
 node_attributes |>
-  mutate(node = node |> str_replace_all(" ", "\n"),
+  mutate(node = node |> str_replace_all(" ", "\n") |> str_to_sentence(),,
          # colorblind friendly
          color = str_replace(color, "blue", "#3B99B1"),
          color = str_replace(color, "red", "#F5191C")) |>
@@ -71,6 +71,9 @@ filter(edges, cites == "river-state") |>
 filter(edges, cites == "river-city")  |>
   netlit_plot()
 
-filter(edges, cites == "landholding")  |>
+filter(edges, case == "landholding")  |>
+  netlit_plot()
+
+filter(edges, case == "landholing-extended")  |>
   netlit_plot()
 
