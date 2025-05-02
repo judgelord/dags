@@ -39,7 +39,7 @@ Tracking",6,11,#F5191C,white,50
 Sustainability,7,1,grey,white,50
 Regulation,1,11,grey,white,50
 "Landholding
-Inequality",1,2,grey,white,50
+Inequality",0,2,grey,white,50
 Revenue,2,1,grey,white,50
 Appointments,2,3,grey,white,50
 "Elites
@@ -47,13 +47,12 @@ Capture
 Public
 Officials",3,2,grey,white,50
 "Officials
-Interfere
-In
-Elections",5,2,grey,white,50
+Interfere in
+Elections",7,2,grey,white,50
 "Remove
-Voters",6,1,grey,white,50
+Voters",8,1,grey,white,50
 "Pressure
 Poll
-Officers",6,3,grey,white,50
+Officers",8,3,grey,white,50
 "Electoral
-Fraud",7,2,grey,white,50
+Fraud",10,2,grey,white,50

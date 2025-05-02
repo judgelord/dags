@@ -5,7 +5,7 @@ format:
   pdf
 title: Literature Review as Casing and Diagraming 
 # Generalization Interrogation #Uses and Limits of Directed Analytic Graphs Beyond Causal Designs in Social Science
-subtitle: Adapting qualitative and quantative research methods for better inferences about existing arguments and evidence
+subtitle: Adapting qualitative and quantitative research methods for better inferences about existing arguments and evidence
 # subtitle:  Using qualitative and quantitative research methods to clarify our conjectures about others' arguments and evidence 
 Runningtitle: Literature Review as Casing and Diagraming #Uses and Limits of DAGs
 runningauthor: Devin Judge-Lord
@@ -17,7 +17,7 @@ author:
         department: Ford School of Public Policy
     note: "The most recent draft is at https://JudgeLord.github.io/dags/dags-paper.pdf. Comments welcome: judgelor@umich.edu. I am grateful for comments from Joe Soss."
 abstract: |
- This chapter offers tools for two key tasks---casing and causal diagramming---that most literature reviews do only implicitly.  Casing literature is how we construct a "set of cases" to make inferences about prior studies. Diagramming makes explicit our understandings of existing causal claims and evidence. I argue that qualitative and quantitative research methods can help us better the case and diagram and thus make clearer inferences about prior literature. Because the objects of study and potential relationships among them are constructed by research communities, diagrams can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Where meaning is shared, students might then use diagrams to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." Visually examining both shared and divergently defined concepts and relationships among them may also help reveal unstated assumptions in a body of scholarship.
+ This chapter offers tools for two key tasks---casing and causal diagramming---that most literature reviews do only implicitly.  Casing literature is how we construct a "set of cases" to make inferences about prior studies. Diagramming makes explicit our understanding of existing causal claims and evidence. I argue that qualitative and quantitative research methods can help us better the case and diagram and thus make clearer inferences about prior literature. Because the objects of study and potential relationships among them are constructed by research communities, diagrams can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Where meaning is shared, students might then use diagrams to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." Visually examining both shared and divergently defined concepts and relationships among them may also help reveal unstated assumptions in a body of scholarship.
 #  Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts). Even where causality is not identified, most quantitative and qualitative research claims can be visualized as (potentially causal) relationships among concepts. This essay explores the uses of DAGs beyond casual designs, including identifying gaps in literatures and assessing the generalizability of findings. Because the objects of study and potential relationships among them are constructed by research communities, DAGs can help assess generalizability by clarifying where meaning is shared. For example, a student may ask to what extent scholars using different methods attach similar or different meanings to named concepts and types of relationships. Where meaning is shared, students might then use DAGs to help identify gaps in relationships examined, the cases studied, or the methods used to assess a relationship. Where meaning is not shared, the exercise clarifies where researchers may be "talking past one another." Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. This essay also notes several limitations of DAGs. For example, DAGs are poor tools for communicating a researcher's subjective experiences. Likewise, conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows. 
 keywords: literature review, casing, diagramming, Directed Analytic Graphs, causal relationships, generalizability, shared meaning
 editor: source
@@ -81,34 +81,42 @@ This essay follows a recent effort to make it easier for scholars to employ grap
 
 # Introduction
 
+Iteratively throughout the research process, we engage in at least three related tasks: (1) *understanding* prior theorizing and research, (2) *identifying/clarifying* our theoretical and empirical contributions, (3) *translating and bounding* our contributions in relation to prior theorizing and research. In doing so, we situate our work in a scholarly community and make it legible to them.  
+
 This chapter offers tools for conducting literature reviews and borrowing insights from qualitative and quantitative research methods.  These tools help us with two key tasks---casing and causal diagramming---that most literature reviews do more implicitly than explicitly. 
 Casing is how we construct a "set of cases" from prior studies. 
-Diagramming makes explicit our understanding of existing causal claims and evidence.
-To help us better case and diagram prior literature, I adapt research methods from qualitative casing, elicitation, and network statistics. These tools, developed for understanding and communicating our own data and causal models are also useful for exploring and communicating our claims about prior work. Just as there will always be uncertainty in our inferences from evidence, there will always be uncertainty in our inferences about prior research. Prior research should be treated as an object of study, about which we attempt to make clear claims with transparent methods that highlight uncertainty and assumptions. 
+Diagramming makes explicit our understanding of existing concepts, causal claims, and evidence.
+To help us better case and diagram prior literature, I adapt research methods from qualitative casing, elicitation, and network statistics. These tools---developed for understanding and communicating our own data and causal models---are also useful for exploring and communicating our claims about prior work. Just as there will always be uncertainty in our inferences from evidence, there will always be uncertainty in our inferences about prior research. Prior research should be treated as an object of study, about which we attempt to make clear claims with transparent methods that highlight uncertainty and assumptions. 
 
 <!--- bias --> 
 My starting premise is that typical modes of generalizing about the state of "the literature"---ad hoc impressions and citation networks---are deficient for two related reasons. First, neither our impressions of scholarly debates nor citation networks directly assess the thing we really want to know: where are our theories or evidence for them incomplete or conflicting. The impressions we develop about scholarly debates through our academic work are not rigorous. They are approximations of the existing arguments based on a limited and non-systematic sample. Similarly, while citation networks can be systematic in a way, they do not necessarily reflect theory. Second, both are biased in the same direction from our core interest in theory and evidence. The direction is toward the prestige and prominence of authors. Some authors are more often cited, discussed, and given prominent platforms. Relying on our impressions and citation networks means over-sampling some relevant studies and likely missing others. We can never fully escape this bias. 
 
 <!-- the trouble comprehensiveness --> 
-The typical advice is to be more comprehensive in the literature we review. While admirable and increasingly aided by technologies like Web of Science and Google Scholar, this advice is troublesome because the task is without end. But comprehensiveness is not the only way to improve literature reviews; we must also strive for richness and clarity in our claims. This essay offers tools to improve the depth rather than the breadth of a literature review. 
+The typical advice is to be more comprehensive in the literature we review. While admirable and increasingly aided by technologies like the Web of Science and Google Scholar, this advice is troublesome because the task is without end. But comprehensiveness is not the only way to improve literature reviews; we must also strive for richness and clarity in our claims. This essay offers tools to improve the depth rather than the breadth of a literature review. 
 
 I propose focusing more directly on our object of inquiry: gaps or conflicts in our causal theories or evidence. Doing so shifts our orientation from position-taking ("who am I with and who am I against") or situating ("whose work is my study related to?") toward tasks more akin to translation, casing [@Soss2021], and constructing.  Rather than "locating" or "situating" our research in a web of citations, this approach focuses on making explicit the inevitable conjectures and intellectual work we do when we put prior work "in conversation" or assert that some studies are the same or different than others. I focus on social science because our work inevitably spans incommensurate social context and human experiences. 
 
 <!-- not novel--> 
-At its root, casing and diagramming are not novel. Whiteboards, notepads, and occasionally manuscripts are full of causal diagrams that attempt to clarify causal relationships. In doing so, we inevitably name key concepts and assert similarities among prior studies. My intervention is merely to suggest that we can do this better by borrowing research methods developed for similar tasks in empirical research. Literature reviews better serve their purpose the more they make explicit our conjecture about others' causal claims and evidence. Put differently, if literature reviews are exercises in inference, we can use appropriate tools of inference to interrogate our claims about what others have said. Here, I focus on a few such tools.
+At its root, casing and diagramming are not novel. Whiteboards, notepads, and occasionally manuscripts are full of causal diagrams that attempt to clarify causal relationships. In doing so, we inevitably name key concepts and assert similarities among prior studies. My intervention is merely to suggest that we can do this better by borrowing research methods developed for similar tasks in empirical research. Literature reviews better serve their purpose the more they make explicit our conjecture about others' causal claims and evidence. Put differently, if literature reviews are exercises in inference, we can use appropriate tools of inference to interrogate our claims about what others have said. Just as we use tools to make clearer definitional and causal claims, we can use tools to make clearer claims about definitional and causal claims.  Here, I focus on a few such tools.
 
 <!--bad traiing --> 
-These tools are useful because our training in the art of literature review is mostly on-the-job training. Templates for seminar papers and theses often have a section titled "Literature Review" (though books and journal articles generally do not). Most of us learn how to do this through comments from professors on our papers and instructions on how to explore citation networks on the Web of Science or Google Scholar. Probably the most commonly assigned book to political science graduate students, *Designing Social Inquiry* [@KKV] on "how to pose questions and fashion scholarly research" (p. 1) has sections on summarizing data and constructing causal theories but does not discuss summarizing prior research or constructing claims about the literature. In collaborative work, it is often the senior scholar's role to "situate" the project in literature, of which they have a richer impression gained through their years of observing in academic debates.
+These tools are useful because our training in the art of literature review is mostly on-the-job training. Templates for seminar papers and theses often have a section titled "Literature Review" (though books and journal articles generally do not). It is clear that a bunch of citations belong in this section, but there is little guidance on how to compose it. Most of us learn how to do this through comments from professors on our papers and instructions on how to explore citation networks on the Web of Science or Google Scholar. Probably the most commonly assigned book to political science graduate students, *Designing Social Inquiry* [@KKV] on "how to pose questions and fashion scholarly research" (p. 1) has sections on summarizing data and constructing causal theories but does not discuss summarizing prior research or constructing claims about the literature. Students are told to "make a specific contribution to an identifiable scholarly literature" by "explicitly locating a research design within the framework of the existing social scientific literature" (p. 15-16).^[@KKV offer six possible ways to do so: choose a hypothesis seen as important, choose an accepted hypothesis that may be false, provide further evidence for a debate, evaluate an assumption, argue that a topic has been overlooked, or show that theories or evidence from one literature can be applied in another.]
+They conclude with the following charge: 
+
+> Having tentatively chosen a topic, we enter a dialogue with the literature. What questions of interest to us have already been answered? How can we pose and refine our question so that it seems capable of being answered with the tools available? We may start with a burning issue, but we will have to come to grips both with the literature of social science and the problems of inference. [@KKV p. 19]
+
+This is more or less the end of the advice on how to come to grips with the literature. The rest of the book is about the problems of inference in answering research questions. 
+Other common research design textbooks [e.g., @Brady2010] similarly provide little guidance on literature review.  In collaborative work, it is often the senior scholar's role to "situate" the project in literature, of which they have a richer impression gained through their years of observing academic debates.
 
 <!-- generalizing --> 
-Literature reviews inevitably involve generalizing. Summarizing and diagramming literature is an excercise in generalizing concepts (boxes, "nodes") and generalizing relationships (arrows, "edges").
-To construct a diagram representing prior work,  we must choose to assign the key concepts of prior studies to either the same box or different boxes or nodes. Likewise, we must decide if a given study theorized or tested a given causal relationship. The process of choosing prior studies to review and assigning labels to the concepts and relationships they discuss is parallel to what we do when we choose cases to study, the what @Soss2021 calls "casing."
+Literature reviews inevitably involve generalizing. Summarizing and diagramming literature is an exercise in generalizing concepts (boxes, "nodes") and generalizing relationships (arrows, "edges").
+To construct a diagram representing prior work,  we must choose to assign the key concepts of prior studies to either the same box or different boxes or nodes. Likewise, we must decide if a given study theorized or tested a given causal relationship. The process of choosing prior studies to review and assigning labels to the concepts and relationships they discuss is parallel to what we do when we choose cases to study, what @Soss2021 calls "casing."
 
 ## Casing 
 
 Portions of texts that review prior literature often include a named concept or causal claim followed by a string of citations. This is an assertion that all of those studies mean the same thing when they use this language. If they used different words, it is an assertion that they meant the same thing. This is parallel to the "unit homogeneity" assumption in quantitative research [@KKV, p. 91] and process tracing [@Beach2013, p. XX]---that these prior studies are all cases of the same thing. 
 
-In "casing" the prior literature, we make claims about the subjects of inquiry [@Soss2021].  While often implicit, doing so do makes claims about the similarity of context, concepts, and causal relationships---i.e., claims about the similarity of cases. Inevitably, casing the literature is a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies. 
+In "casing" the prior literature, we make claims about the subjects of inquiry [@Soss2021].  While often implicit, doing so makes claims about the similarity of context, concepts, and causal relationships---i.e., claims about the similarity of cases. Inevitably, casing the literature is a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies. 
 
 Almost without exception in the social sciences, meta-analyses note the difficulty of comparing findings across studies due to differences in how different studies conceptualize and operationalize variables the meta-analysis seeks to assess. The conjecture of all meta-analyses is that the relationship examined in each study is conceptually the same, and thus the findings are comparable. Stated differently, in order to assess whether the findings generalize, we must assert that the concepts generalize. 
 
@@ -120,24 +128,27 @@ We have choices about how to name the concepts we which to deploy to do the inte
 
 
 
-[ADD MORE ON PARALLELS WITH SOSS, FRICKER, RIOFRANCOS, ETC.]
+[ADD MORE ON PARALLELS WITH @Soss2021, @Fricker2007, @Riofrancos2021, ETC.]
 
-## Causal diagrams 
+## Diagramming
 
-Humans have used diagrams as long or longer than written language, and they are a common feature of science writing. Two recent developments make them worth attention. First, they are increasingly common in social science focused on causal identification, such as experimental designs and process tracing. Second, visualization tools have become much easier to use due to advances in network analysis.  Computers can now quickly produce diagrams and network statistics about the relationships with relatively minimal input [@Lo2023].  As these powerful tools become easier to use, it is a good time to examine their uses beyond causal designs and network analysis. 
+Humans have used diagrams as long or longer than written language, and they are a common feature of science writing. Two recent developments make them worth attention. First, they are increasingly common in social science focused on causal identification, such as experimental designs and process tracing. Second, visualization tools have become much easier to use due to advances in network analysis.  Computers can now quickly produce diagrams and network statistics about the relationships with relatively minimal input [@Lo2023].  As these powerful tools become easier to use, it is a good time to examine their uses beyond causal theorizing and empirical network analysis. 
 
 Causal research designs have made productive use of the directed analytic graph (DAG), a tool adapted from engineering to visualize causal processes as a set of arrows (relationships) connecting nodes (social science concepts).^[DAG is also used to describe a Directed *Acyclic* Graph, a special case where arrows between nodes can point in only one direction. While the acyclic property is extremely important for causal identification (as well as computer operations), it is less important for the applications I discuss here. Indeed, many social science theories posit cyclical relationships, so by "DAG," I mean a more general Directed *Analytic* Graph where arrows can go both ways, also called simply a directed graph. Such visualizations with arrows connecting nodes go by many names in different disciplines, including an "influence diagram" in decision analysis and a sub-class of "timeline-based" methods in infographics. In this essay, I use "diagram" and directed analytic graph as synonyms.] 
 Increased emphasis on causal identification in social science has increased the prevalence of figures featuring arrows representing causal relationships among variables [e.g., @Morgan2015]. Similar figures are common in studies using process tracing methods [@Bennett1997], sometimes called a "process tracing diagram" [@Mahoney2016]. In process tracing, nodes of a graph can represent events [@Waldner2014, p. 134]. Researchers also compare diagrams of events (in an "event history map") to diagrams of theories containing causes, mechanisms, and outcomes (in a "causal graph") [@Beach2013, p. 66-73].   Even where causality is not identified, most quantitative and qualitative research claims can be visualized as (potentially causal) relationships among concepts [@Lo2023].
 
-Qualitative researchers have productively employed directed graphs in a toolkit of research methods known as participant-led diagramming or graphic elicitation [@Bravington2018]. Many qualitative research tools ask participants to draw their understanding of places or events. One application of drawing exercises is to elicit beliefs about casual relationships from participants by asking them to draw diagrams with arrows. Among other purposes, these methods allow researchers to assess the extent to which understandings of causal relationships among people and events are shared among participants. For example, a researcher might compare participants' understandings of the timeline of events or the critical junctures. 
+<!--ELICITATION--> 
+Qualitative researchers have productively employed directed graphs in a toolkit of research methods known as participant-led diagramming or graphic elicitation [@Bravington2018]. Many qualitative research tools ask participants to draw their understanding of places or events. One application of drawing exercises is to elicit beliefs about casual relationships from participants by asking them to draw diagrams with arrows. Among other purposes, these methods allow researchers to assess the extent to which understandings of causal relationships among people and events are shared among participants. For example, a researcher might compare participants' understandings of the timeline of events or the critical junctures. <!--MORE ON ELICITATION?--> 
+
 Diagrams are tools to convey abstractions.
 All models and general claims about the social world are necessarily simplifications of complex social relations and are thus reductive. Small (and sometimes complex) graphs or concept maps have long been a tool to illustrate claims in a way that makes them easier to understand. 
-In some ways, visualizations like DAGs offer a richer set of tools for presenting explanations than prose, especially for describing mechanistic explanations. Arrows and nodes in diagrams may use similar or different shapes, colors, or sizes to highlight dimensions of similarities and differences among concepts and causal processes. The maps can powerfully orient a reader to a complex causal story and help focus attention on certain parts of a complex set of relationships.
+In some ways, visualizations like DAGs offer a richer set of tools for presenting explanations than prose, especially for describing mechanistic explanations. Arrows and nodes in diagrams may use similar or different shapes, colors, or sizes to highlight dimensions of similarities and differences among concepts and causal processes. These maps can powerfully orient a reader to a complex causal story and help focus attention on certain parts of a complex set of relationships.
 
 
 My aim in this essay is not to explore the implications of the mechanistic view of the world. Much has been written on this in the philosophy of science literature. For example, @Bechtel2005 contrasts mechanistic explanations with nomological explanations as approaches to scientific representation. In political science, @Soss2021 and others have discussed the advantages of the nominal approach. I also do not attempt to instruct students on conducting generalizable research or interrogate whether generalizability should be the object of study. 
 
-My aim is a more limited and practical exploration of the uses and limitations of casing methods and directed analytic graphs a tools in the research process, focusing on the early stages of the research process where we review and make claims about the state of existing scholarship. Much of this amounts to recommendations on how to use visual tools to be more explicit, clear, and probing about the relationships among theories and findings. A researcher may often conclude that the contexts or assumptions of prior studies are incommensurate, and generalizing across them is impossible. More likely, these exercises will highlight some points of shared meaning and other points of divergent meanings across studies that seem to address the same concepts and causal theories. The aim is to help us clarify how our words fit into a conceptual schema. At the end, I briefly comment on the limits of visual schemas for describing our complex world. 
+My aim is a more limited and practical exploration of the uses and limitations of casing methods and directed analytic graphs as tools in the research process, focusing on the parts of the research process where we review and make claims about the state of existing scholarship.^[When research is presented as a linear process literature review is often presented as the first stage, but in this is rarely the case in practice, nor is it usually desirable.]
+Much of this amounts to recommendations on how to use visual tools to be more explicit, clear, and probing about the relationships among theories and findings. A researcher may often conclude that the contexts or assumptions of prior studies are incommensurate, and generalizing across them is impossible. More likely, these exercises will highlight some points of shared meaning and other points of divergent meanings across studies that seem to address the same concepts and causal theories. The aim is to help us clarify how our words fit into a conceptual schema. At the end, I briefly comment on the limits of visual schemas for describing our complex world. 
 
 
 # How to Map a Literature
@@ -145,6 +156,9 @@ My aim is a more limited and practical exploration of the uses and limitations o
 This section summarizes @Lo2023 in the language of "casing" a literature. 
 
 [TODO: A STEP-BY-STEP GUIDE TO TURNING A LIST OF STUDIES INTO A DIRECTED GRAPH, FOCUSING ON CHALLENGES IN THE REDISTRICTING CASE]
+
+- When we run into trouble in mapping, this is evidence of conceptual ambiguity. 
+- Concept maps and causal diagrams serve different purposes. In practice, however, whether something is an antecedent cause or a definition component of a concept is often a matter of perspective. For example, we may measure a behavior (e.g., removing voters from voting rolls) as a cause of an outcome (e.g., fraud), but in practice, we may measure the concept of fraud by the number of voters removed from voting rolls, turning it from a cause to a definition of the outcome. The diagram is the same, but its interpretation and function differ. 
 
 # Assessing the Generalizability of Theories and Findings
 
@@ -186,6 +200,8 @@ edges |> filter( case == "forestry") |>
 
 ```
 
+
+This is an example where diagramming reveals more about conceptual mapping than causal theorizing. @Cashore2004 or @Overdevest2014 only have different causal models of the relationship between forestry certification and sustainability in the sense that they implicitly define the concept of sustainability differently by focusing on different things. We might call these things inputs if we have some external definition of sustainability and want to think about forestry practices as causal antecedents. Alternatively, we could treat forestry practices as "components" of the concept of sustainability. This latter approach makes @fig-forestry more of a concept map than a causal diagram. Neither @Cashore2004 nor @Overdevest2014 is clear about whether they are thinking about the things they measure as causal antecedents to sustainability or as a definition. A future study using an empirical measure of forest health will want to understand it as a causal model, whereas a study focused on measuring regulatory stringency, like @JudgeLord2020, may be more likely to present it as a concept map. Either way, the diagram is illuminating. 
 
 ### The same words may describe differing causal models
 
@@ -346,6 +362,14 @@ edges |> filter( cites == "river-city")  |>
 ```
 
 
+# Evolving 
+
+[A SHORT SECTION ABOUT HOW ENGAGEMENT WITH LITERATURE CAN EVOLVE (I DON'T HAVE MUCH TO SAY ABOUT THIS, BUT IT IS IMPORTANT TO NOTE)]
+
+The idea of literature as a "stage" in the research process artificially and unrealistically frames research as a linear process.  
+
+- iterative
+- fieldwork and framework
 
 
 # Limitations 
@@ -395,25 +419,8 @@ netlit_plot <- function(edges){
 }
 
 
-edges |> filter(case == "forestry") |>
-  netlit_plot()
-
-edges |> filter(cites == "Balla et al. 2020") |>
-  netlit_plot()
-
-edges |> filter(cites == "Judge-Lord 2021") |>
-  netlit_plot()
-
-edges |> filter(cites == "river-state") |> 
-  netlit_plot()
-
-edges |> filter(cites == "river-city") |>
-  netlit_plot()
-  
-filter(edges, cites == "Ziblatt 2009")  |>
-  netlit_plot()
-  
-filter(edges, cites == "Beach and Petersen 2013")  |>
+# We can then plot selected nodes or edges  
+edges |> filter( cites == "Ziblatt 2009")  |>
   netlit_plot()
 ```
 

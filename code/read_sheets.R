@@ -9,12 +9,23 @@ library(googlesheets4)
 
 gs4_auth(email = "devin.jl@gmail.com")
 
+# drop NA
 edges <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "edges") |>
   drop_na(from)
 
+# helper function to format labels 
+clean <- function(x){
+  x |> str_replace_all(" ", "\n") |> 
+    str_replace_all("\n([A-z]{2})\n", " \\1\n") |> 
+    str_to_sentence() 
+} 
+
+clean("officials interfere in elections")
+
+
 edges |>
-  mutate(from = from |> str_replace_all(" ", "\n") |> str_to_sentence(),
-         to = to |> str_replace_all(" ", "\n") |> str_to_sentence(),,
+  mutate(from = from |> clean(),
+         to = to |> clean(),
          # colorblind friendly
          color = str_replace(color, "blue", "#3B99B1"),
          color = str_replace(color, "red", "#F5191C")) |>
@@ -25,7 +36,7 @@ node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sh
   drop_na(node)
 
 node_attributes |>
-  mutate(node = node |> str_replace_all(" ", "\n") |> str_to_sentence(),,
+  mutate(node = node |> clean(),
          # colorblind friendly
          color = str_replace(color, "blue", "#3B99B1"),
          color = str_replace(color, "red", "#F5191C")) |>
