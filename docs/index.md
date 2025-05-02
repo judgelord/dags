@@ -1,6 +1,6 @@
 # [Literature Review as Casing and Diagraming](https://judgelord.github.io/dags/dags-paper.pdf)
 
-## Using qualitative and quantative research methods for inference about existing arguments and evidence
+## Adapting qualitative and quantative research methods for better inferences about existing arguments and evidence
 
 ## by Devin Judge-Lord
 

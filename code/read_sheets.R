@@ -49,7 +49,7 @@ netlit_plot <- function(edges){
     # pluck out the graph object
     pluck("graph") |>
     # plot using the default igraph plot function
-    plot()
+    plot( margin=0)
 }
 # (for fancier plots, see see judgelord.github.io/netlit/articles)
 
