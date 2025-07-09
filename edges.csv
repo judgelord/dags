@@ -55,36 +55,107 @@ river,river-city,gray,Payments,Farmers
 river,river-city,gray,Pollution,"Downstream
 City"
 forestry,Cashore et al. 2004,#3B99B1,"Plantation
-forestry",Sustainability
+Forestry",Sustainability
 forestry,Cashore et al. 2004,#3B99B1,Chemicals,Sustainability
 forestry,Cashore et al. 2004,#3B99B1,Clearcuts,Sustainability
 forestry,Cashore et al. 2004,#3B99B1,Exotics,Sustainability
 forestry,Cashore et al. 2004,#3B99B1,Reserves,Sustainability
 forestry,Cashore et al. 2004,#3B99B1,"Streamside
-harvesting",Sustainability
-forestry,Cashore et al. 2004,#3B99B1,GMOs,Sustainability
+Harvesting",Sustainability
+forestry,Cashore et al. 2004,#3B99B1,Gmos,Sustainability
 forestry,Overdevest and Zeitlin 2014,#F5191C,"Public
-reporting",Sustainability
+Reporting",Sustainability
 forestry,Overdevest and Zeitlin 2014,#F5191C,"Stakeholder
-consultation",Sustainability
+Consultation",Sustainability
 forestry,Overdevest and Zeitlin 2014,#F5191C,Auditing,Sustainability
 forestry,Overdevest and Zeitlin 2014,#F5191C,"Supply
-chain
-tracking",Sustainability
+Chain
+Tracking",Sustainability
 forestry,Cashore et al. 2004,#3B99B1,Regulation,"Plantation
-forestry"
+Forestry"
 forestry,Cashore et al. 2004,#3B99B1,Regulation,Chemicals
 forestry,Cashore et al. 2004,#3B99B1,Regulation,Clearcuts
 forestry,Cashore et al. 2004,#3B99B1,Regulation,Exotics
 forestry,Cashore et al. 2004,#3B99B1,Regulation,Reserves
 forestry,Cashore et al. 2004,#3B99B1,Regulation,"Streamside
-harvesting"
-forestry,Cashore et al. 2004,#3B99B1,Regulation,GMOs
+Harvesting"
+forestry,Cashore et al. 2004,#3B99B1,Regulation,Gmos
 forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,"Public
-reporting"
+Reporting"
 forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,"Stakeholder
-consultation"
+Consultation"
 forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,Auditing
 forestry,Overdevest and Zeitlin 2014,#F5191C,Regulation,"Supply
-chain
-tracking"
+Chain
+Tracking"
+landholding,Ziblatt 2009,gray,"Landholding
+Inequality","Elites
+Capture
+Public
+Officials"
+landholding,Ziblatt 2009,gray,"Elites
+Capture
+Public
+Officials","Officials
+Interfere in
+Elections"
+landholding,Ziblatt 2009,gray,"Officials
+Interfere in
+Elections","Electoral
+Fraud"
+landholing-extended,Beach and Petersen 2013,gray,"Landholding
+Inequality",Revenue
+landholing-extended,Beach and Petersen 2014,gray,"Landholding
+Inequality",Appointments
+landholing-extended,Beach and Petersen 2015,gray,Revenue,"Elites
+Capture
+Public
+Officials"
+landholing-extended,Beach and Petersen 2016,gray,Appointments,"Elites
+Capture
+Public
+Officials"
+landholing-extended,Beach and Petersen 2017,gray,"Elites
+Capture
+Public
+Officials","Officials
+Interfere in
+Elections"
+landholing-extended,Beach and Petersen 2019,gray,"Officials
+Interfere in
+Elections","Remove
+Voters"
+landholing-extended,Beach and Petersen 2020,gray,"Officials
+Interfere in
+Elections","Pressure
+Poll
+Officers"
+landholing-extended,Beach and Petersen 2021,gray,"Remove
+Voters","Electoral
+Fraud"
+landholing-extended,Beach and Petersen 2022,gray,"Pressure
+Poll
+Officers","Electoral
+Fraud"
+democracy,Schumpeter 1976 [1942]; Przeworski 1991),gray,"Competitve
+Elections",Democracy
+democracy,Wedeen 2007; Habermas 1989,gray,"Political
+Engagement","Democratic
+Practice"
+democracy,Wedeen 2007; Habermas 1989,gray,"Critical
+Debate","Democratic
+Practice"
+democracy,Wedeen 2007; Habermas 1989,gray,"Public
+Spheres","Political
+Engagement"
+democracy,Wedeen 2007; Habermas 1989,gray,"Public
+Spheres","Critical
+Debate"
+democracy,Schumpeter 1976 [1942]; Przeworski 1991,gray,"Ex-ante
+Uncertainty","Competitve
+Elections"
+democracy,Schumpeter 1976 [1942]; Przeworski 1991,gray,"Ex-post
+Irreversibility","Competitve
+Elections"
+democracy,Schumpeter 1976 [1942]; Przeworski 1991,gray,Repeatability,"Competitve
+Elections"

@@ -1,5 +1,5 @@
 # this script reads edges and nodes from a google sheet
-library(devtools)
+# library(devtools)
 # install_github("judgelord/netlit")
 
 
@@ -9,23 +9,36 @@ library(googlesheets4)
 
 gs4_auth(email = "devin.jl@gmail.com")
 
-edges <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "edges") |>
+# drop NA
+edges <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg",
+                    sheet = "edges") |>
   drop_na(from)
 
+# helper function to format labels
+clean <- function(x){
+  x |> str_replace_all(" ", "\n") |>
+    str_replace_all("\n([A-z]{2})\n", " \\1\n") |>
+    str_to_sentence()
+}
+
+clean("officials interfere in elections")
+
+
 edges |>
-  mutate(from = from |> str_replace_all(" ", "\n"),
-         to = to |> str_replace_all(" ", "\n"),
+  mutate(from = from |> clean(),
+         to = to |> clean(),
          # colorblind friendly
          color = str_replace(color, "blue", "#3B99B1"),
          color = str_replace(color, "red", "#F5191C")) |>
   write_csv("edges.csv")
 
-node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "nodes") |>
+node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg",
+                              sheet = "nodes") |>
 
   drop_na(node)
 
 node_attributes |>
-  mutate(node = node |> str_replace_all(" ", "\n"),
+  mutate(node = node |> clean(),
          # colorblind friendly
          color = str_replace(color, "blue", "#3B99B1"),
          color = str_replace(color, "red", "#F5191C")) |>
@@ -49,7 +62,7 @@ netlit_plot <- function(edges){
     # pluck out the graph object
     pluck("graph") |>
     # plot using the default igraph plot function
-    plot()
+    plot( margin=0)
 }
 # (for fancier plots, see see judgelord.github.io/netlit/articles)
 
@@ -69,5 +82,16 @@ filter(edges, cites == "river-state") |>
   netlit_plot()
 
 filter(edges, cites == "river-city")  |>
+  netlit_plot()
+
+filter(edges, case == "landholding")  |>
+  netlit_plot()
+
+filter(edges, case == "landholing-extended")  |>
+  netlit_plot()
+
+
+filter(edges, case == "democracy")  |>
+  filter(cites != "Wedeen 2007; Habermas 1989") |>
   netlit_plot()
 
