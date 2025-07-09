@@ -1,5 +1,5 @@
 # this script reads edges and nodes from a google sheet
-library(devtools)
+# library(devtools)
 # install_github("judgelord/netlit")
 
 
@@ -10,15 +10,16 @@ library(googlesheets4)
 gs4_auth(email = "devin.jl@gmail.com")
 
 # drop NA
-edges <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "edges") |>
+edges <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg",
+                    sheet = "edges") |>
   drop_na(from)
 
-# helper function to format labels 
+# helper function to format labels
 clean <- function(x){
-  x |> str_replace_all(" ", "\n") |> 
-    str_replace_all("\n([A-z]{2})\n", " \\1\n") |> 
-    str_to_sentence() 
-} 
+  x |> str_replace_all(" ", "\n") |>
+    str_replace_all("\n([A-z]{2})\n", " \\1\n") |>
+    str_to_sentence()
+}
 
 clean("officials interfere in elections")
 
@@ -31,7 +32,8 @@ edges |>
          color = str_replace(color, "red", "#F5191C")) |>
   write_csv("edges.csv")
 
-node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg", sheet = "nodes") |>
+node_attributes <- read_sheet("1C5frNDGSIwaR-a6QYZaWM-f-vSCVYSJKcvA-bILvEsg",
+                              sheet = "nodes") |>
 
   drop_na(node)
 
@@ -86,5 +88,10 @@ filter(edges, case == "landholding")  |>
   netlit_plot()
 
 filter(edges, case == "landholing-extended")  |>
+  netlit_plot()
+
+
+filter(edges, case == "democracy")  |>
+  filter(cites != "Wedeen 2007; Habermas 1989") |>
   netlit_plot()
 

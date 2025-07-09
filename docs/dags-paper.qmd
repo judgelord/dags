@@ -1,11 +1,11 @@
 ---
 format:
   #docx: default
-  #html
-  pdf
-title: Literature Review as Casing and Diagraming 
+  html
+  #pdf
+title: Literature Reviews as Generalization #  Literature Review as Casing and Diagraming 
 # Generalization Interrogation #Uses and Limits of Directed Analytic Graphs Beyond Causal Designs in Social Science
-subtitle: Adapting qualitative and quantitative research methods for better inferences about existing arguments and evidence
+subtitle: Using Diagrams to Case Existing Arguments and Evidence  # Adapting qualitative and quantitative research methods for better inferences about existing arguments and evidence
 # subtitle:  Using qualitative and quantitative research methods to clarify our conjectures about others' arguments and evidence 
 Runningtitle: Literature Review as Casing and Diagraming #Uses and Limits of DAGs
 runningauthor: Devin Judge-Lord
@@ -81,23 +81,34 @@ This essay follows a recent effort to make it easier for scholars to employ grap
 
 # Introduction
 
+Literature reviews are a form of generalization. 
+
 Iteratively throughout the research process, we engage in at least three related tasks: (1) *understanding* prior theorizing and research, (2) *identifying/clarifying* our theoretical and empirical contributions, (3) *translating and bounding* our contributions in relation to prior theorizing and research. In doing so, we situate our work in a scholarly community and make it legible to them.  
 
-This chapter offers tools for conducting literature reviews and borrowing insights from qualitative and quantitative research methods.  These tools help us with two key tasks---casing and causal diagramming---that most literature reviews do more implicitly than explicitly.
+This chapter offers tools for conducting literature reviews, borrowing insights from qualitative and quantitative research methods.  These tools help us with two key tasks---casing and causal diagramming---that most literature reviews do more implicitly than explicitly.
 Casing is how we construct a "set of cases" from prior studies. 
 Diagramming makes explicit our understanding of existing concepts, causal claims, and evidence.
 To help us better case and diagram prior literature, I adapt research methods from qualitative casing, elicitation, and network statistics. These tools---developed for understanding and communicating our own data and causal models---are also useful for exploring and communicating our claims about prior work. Just as there will always be uncertainty in our inferences from evidence, there will always be uncertainty in our inferences about prior research. Prior research should be treated as an object of study, about which we attempt to make clear claims with transparent methods that highlight uncertainty and assumptions. 
 
 <!--- bias --> 
-My starting premise is that typical modes of generalizing about the state of "the literature"---ad hoc impressions and citation networks---are deficient for two related reasons. First, neither our impressions of scholarly debates nor citation networks directly assess the thing we really want to know: where are our theories or evidence for them incomplete or conflicting. The impressions we develop about scholarly debates through our academic work are not rigorous. They are approximations of the existing arguments based on a limited and non-systematic sample. Similarly, while citation networks can be systematic in a way, they do not necessarily reflect theory. Second, both are biased in the same direction from our core interest in theory and evidence. The direction is toward the prestige and prominence of authors. Some authors are more often cited, discussed, and given prominent platforms. As @Fricker2007 puts it, "powerful have an unfair advantage in structuring collective social understandings" (p. 147). Relying on our impressions and citation networks means over-sampling some relevant studies and likely missing others. We can never fully escape this bias. 
+My starting premise is that typical modes of generalizing about the state of "the literature"---ad hoc impressions and citation networks---are deficient for two related reasons.
+First, neither our impressions of scholarly debates nor citation networks directly assess the thing we really want to know: where are our theories or evidence for them are incomplete or conflicting. The impressions we develop about scholarly debates through our academic work are not rigorous. They are approximations of the existing arguments based on a limited and non-systematic sample. Similarly, while citation networks can be systematic in a way, they do not necessarily reflect theory.
+Second, both are biased in the same direction from our core interest in theory and evidence. The direction is toward the prestige and prominence of authors. Some authors are more often cited, discussed, and given prominent platforms. As @Fricker2007 puts it, "powerful have an unfair advantage in structuring collective social understandings" (p. 147). Relying on our impressions and citation networks means over-sampling some relevant studies and likely missing others. 
+
+We can never fully escape this bias. 
+
 
 <!-- the trouble comprehensiveness --> 
-The typical advice is to be more comprehensive in the literature we review. While admirable and increasingly aided by technologies like the Web of Science and Google Scholar, this advice is troublesome because the task is without end. But comprehensiveness is not the only way to improve literature reviews; we must also strive for richness and clarity in our claims. This essay offers tools to improve the depth rather than the breadth of a literature review. 
+The typical advice is to be more comprehensive in the literature we review. While admirable and increasingly aided by technologies like the Web of Science and Google Scholar, this advice is troublesome because the task is without end. But comprehensiveness is not the only way to improve literature reviews; we must also strive for richness and clarity in our claims. This essay offers tools to improve the clarity rather than the breadth of a literature review. 
 
-I propose focusing more directly on our object of inquiry: gaps or conflicts in our causal theories or evidence. We may also wish to comment on whether concepts and relationships have been treated as central or peripheral or the types of data and methods thus far employed to study them. Doing so shifts our orientation from position-taking ("who am I with and against?") or situating ("whose work is my study related to?") toward tasks more akin to translating [@CITE], casing [@Soss2021], and constructing [@CITE].  Rather than "locating" or "situating" our research in a web of citations, this approach focuses on making explicit the inevitable conjectures and intellectual work we do when we put prior work "in conversation" or assert that some studies are the same or different than others. I focus on social science because our work inevitably spans incommensurate social context and human experiences. More transparently constructing literature reviews cannot solve the problem that @Fricker2007 calls "hermeneutical injustice," but it may help us think more deeply about how we construct our understanding of scholarly literature as a form of social understanding. 
+I propose focusing more directly on our object of inquiry: gaps or conflicts in our causal theories or evidence. We may also wish to comment on whether concepts and relationships have been treated as central or peripheral or the types of data and methods thus far employed to study them. Doing so shifts our orientation from position-taking ("who am I with and against?") or situating ("whose work is my study related to?") toward tasks more akin to translating [@Simmons2023], casing [@Soss2021], and constructing [@CITE].  Rather than "locating" or "situating" our research in a web of citations, this approach focuses on making explicit the inevitable conjectures and intellectual work we do when we put prior work "in conversation" or assert that some studies are the same or different than others---i.e., *cases* of X or Y. As social sciencitsts, our work inevitably spans incommensurate social contexts and human experiences. 
+
+<!--hermeneutical injustice limitation--> 
+More transparently constructing literature reviews cannot solve the problem that @Fricker2007 calls "hermeneutical injustice," but it may help us think more deeply about how we construct our understanding of scholarly literature as a form of social understanding. 
+
 
 <!-- not novel--> 
-At its root, casing and diagramming are not novel. Whiteboards, notepads, and occasionally manuscripts are full of causal diagrams that attempt to clarify causal relationships. In doing so, we inevitably name key concepts and assert similarities among prior studies. My intervention is merely to suggest that we can do this better by borrowing research methods developed for similar tasks in empirical research. Literature reviews better serve their purpose the more they make explicit our conjecture about others' causal claims and evidence. Put differently, if literature reviews are exercises in inference, we can use appropriate tools of inference to interrogate our claims about what others have said. Just as we use tools to make clearer definitional and causal claims, we can use tools to make clearer claims about definitional and causal claims.  Here, I focus on a few such tools.
+At its root, casing and diagramming are not novel. Whiteboards, notepads, and occasionally manuscripts are full of causal diagrams that attempt to clarify causal relationships. In doing so, we inevitably name key concepts and assert similarities among prior studies. My intervention is merely to suggest that we can do this better by borrowing research methods developed for similar tasks in empirical research. Literature reviews better serve their purpose the more they make explicit our conjecture about others' causal claims and evidence. Put differently, if literature reviews are exercises in inference and generalization, we can use appropriate tools of generalized inference to interrogate our claims about what others have said. Just as we use tools to make clearer definitional and causal claims in our own work, we can use tools to make clearer claims about the definitional and causal arguments we find in prior work.  Here, I focus on a few such tools.
 
 <!--bad traiing --> 
 These tools are useful because our training in the art of literature review is mostly on-the-job training. Templates for seminar papers and theses often have a section titled "Literature Review" (though books and journal articles generally do not). It is clear that a bunch of citations belong in this section, but there is little guidance on how to compose it. Most of us learn how to do this through comments from professors on our papers and instructions on how to explore citation networks on the Web of Science or Google Scholar. Probably the most commonly assigned book to political science graduate students, *Designing Social Inquiry* [@KKV] on "how to pose questions and fashion scholarly research" (p. 1) has sections on summarizing data and constructing causal theories but does not discuss summarizing prior research or constructing claims about the literature. Students are told to "make a specific contribution to an identifiable scholarly literature" by "explicitly locating a research design within the framework of the existing social scientific literature" (p. 15-16).^[@KKV offer six possible ways to do so: choose a hypothesis seen as important, choose an accepted hypothesis that may be false, provide further evidence for a debate, evaluate an assumption, argue that a topic has been overlooked, or show that theories or evidence from one literature can be applied in another.]
@@ -114,9 +125,9 @@ To construct a diagram representing prior work,  we must choose to assign the ke
 
 ## Casing 
 
-Portions of texts that review prior literature often include a named concept or causal claim followed by a string of citations. This is an assertion that all of those studies mean the same thing when they use this language. If they used different words, it is an assertion that they meant the same thing. This is parallel to the "unit homogeneity" assumption in quantitative research [@KKV, p. 91] and process tracing [@Beach2013, p. XX]---that these prior studies are all cases of the same thing. 
+Portions of texts that review prior literature often include a named concept or causal claim followed by a string of citations. This is an (often implicit) assertion that all of those studies mean the same thing when they use this language. If some of the studies in such a string of citations used different words than the ones we use (e.g., citing a study about "global warming" as about "climate change"), we are asserting that they meant the same thing. This is parallel to the "unit homogeneity" assumption in quantitative research [@KKV, p. 91] and process tracing [@Beach2013, p. XX]---that these prior studies are all cases of the same thing. 
 
-In "casing" the prior literature, we make claims about the subjects of inquiry [@Soss2021].  While often implicit, doing so makes claims about the similarity of context, concepts, and causal relationships---i.e., claims about the similarity of cases. Inevitably, casing the literature is a joint result of how previous scholars created the object of their inquiry and how we construct a "set of cases" from those studies. 
+In "casing" the prior literature, we make claims about the subjects of inquiry [@Soss2021].  While often implicit, doing so makes claims about the similarity of context, concepts, and causal relationships---i.e., claims about the similarity of cases. Inevitably, casing the literature is a joint result of **how previous scholars created the object of their inquiry** and **how we construct a "set of cases" from those studies.** 
 
 Almost without exception in the social sciences, meta-analyses note the difficulty of comparing findings across studies due to differences in how different studies conceptualize and operationalize variables the meta-analysis seeks to assess. The conjecture of all meta-analyses is that the relationship examined in each study is conceptually the same, and thus the findings are comparable. Stated differently, in order to assess whether the findings generalize, we must assert that the concepts generalize. 
 
@@ -186,7 +197,16 @@ Where meaning is not shared, the exercise clarifies where researchers may be "ta
 
 ### Concept-label mismatch {#sec-concept-label}
 
-When scholars use different words to describe similar concepts, it will appear in a diagram as two nodes with the same arrows going in from and out to other nodes. 
+Concepts and labels may diverge in two ways: (1) scholars may use different words for the same concept or (2) the same words for different concepts. This is often the unintended result of distributed nature of knowledge production. Science evolves organically in distinct language and epistemic communities; there is no one central clearing-house or standards organization for scientific concepts. However, explicit interventions may aim to shift how a word is defined or the label uses for a concept. For example whether scientists should say "global warming" or "climate change" to describe the effects of greenhouse gasses.  There are also related debates over how words like democracy and sustainability are defined. Fights over labels and definitions are intertwined---whether a given country or practice qualifies as democratic depends on the definition. 
+
+#### Differnt words, same concept 
+
+When scholars use different words to describe similar concepts, it will appear in a diagram as two nodes with the same arrows going in from and out to other nodes. A diogram may help resolve confusion by visually situating labels for the same concept in parallel positions, prompting us to ask if there are two parallel causal mechanisms, or if, perhaps, various scholars are really talking about the same concepts with different jargon. 
+
+
+<!-- example of same concept called two things ---> 
+
+#### Same word, different concepts
 
 When scholars use the same word or phrase for different concepts, drawing arrows going in or out of that node becomes difficult. When a phrase holds one concept, one set of causal relationships makes sense, but when we switch to the other definition, many of those relationships may not make sense. This is a clue that there is ambiguity in the term and a lack of shared understanding.  
 
@@ -199,6 +219,7 @@ Studies that set out to reconcile contradictory findings often conclude that pre
 #| fig-height: 5
 #| out-width: 70%
 
+# source("code/read_sheets.R")
 par(mar=c(0,0,0,0))
 
 edges |> filter( case == "forestry") |>
@@ -208,6 +229,35 @@ edges |> filter( case == "forestry") |>
 
 
 This is an example where diagramming reveals more about conceptual mapping than causal theorizing. @Cashore2004 or @Overdevest2014 only have different causal models of the relationship between forestry certification and sustainability in the sense that they implicitly define the concept of sustainability differently by focusing on different things. We might call these things inputs if we have some external definition of sustainability and want to think about forestry practices as causal antecedents. Alternatively, we could treat forestry practices as "components" of the concept of sustainability. This latter approach makes @fig-forestry more of a concept map than a causal diagram. Neither @Cashore2004 nor @Overdevest2014 is clear about whether they are thinking about the things they measure as causal antecedents to sustainability or as a definition. A future study using an empirical measure of forest health will want to understand it as a causal model, whereas a study focused on measuring regulatory stringency, like @JudgeLord2020, may be more likely to present it as a concept map. Either way, the diagram is illuminating. 
+
+#### Shifting the meanings of words
+
+When we theorize, we are assert that certain concepts are useful tools for understanding the world. For example, @Wedeen2007 argues that the dominant Schumpeterian definition of democracy "has limitations for scholarly thinking about democracy" p.62). In this case, Wedeen is not confused about the definition of democracy, she is arguing that an alternative definition can be useful in certain cases. Figure @fig-democracy visualizes Wedeen's intervention and, incidentally the lack of conceptual overlap.^[As presented in @Wedeen2007, in part because her aim is to contrast. A broader review of research on democracy would likely identify overlap.]
+
+```{r, cache=FALSE}
+#| label: fig-democracy
+#| fig-cap: "Two Definitions of Democracy" 
+#| fig-subcap:
+#|   - "Wedeen 2007" 
+#|   - "Schumpeter 1976 [1942]; Przeworski 1991"
+#| layout-ncol: 2
+#| fig-width: 3
+#| fig-height: 2
+#| out-width: 80%
+#| fig-cap-location: top
+
+# source("code/read_sheets.R")
+par(mar=c(0,0,0,0))
+
+filter(edges, cites == "Wedeen 2007; Habermas 1989") |>
+  netlit_plot()
+
+filter(edges, cites == "Schumpeter 1976 [1942]; Przeworski 1991") |>
+  netlit_plot()
+
+```
+
+
 
 ### The same words may describe differing causal models
 
@@ -228,6 +278,8 @@ Consider two studies aimed at assessing the effects of advocacy campaigns on U.S
 #| fig-height: 3.5
 #| out-width: 80%
 #| fig-cap-location: top
+
+# source("code/read_sheets.R")
 par(mar=c(0,0,0,0))
 
 edges |> filter( cites == "Balla et al. 2020") |>
@@ -246,6 +298,8 @@ The exercises of comparing and attempting to integrate the two DAGs in @fig-rule
 #| label: tbl-rulemaking
 #| tbl-cap: Node Centrality Two Studies of Policy Influence
 #| fig-cap-location: top
+
+# source("code/read_sheets.R")
 
 a <- edges |> filter( cites == "Balla et al. 2020") |> 
   netlit::review() |> 
@@ -302,7 +356,7 @@ Gaps in theory may appear in a graph as a missing connection between concepts th
 #| fig-cap-location: top
 #| out-width: 100%
 
-
+# source("code/read_sheets.R")
 par(mar=c(0,0,0,0))
 
 edges |> filter( case == "landholding")  |>
@@ -345,6 +399,8 @@ Defining concepts and studying causal relationships can both be done in many way
 
 # Unstated Assumptions 
 
+<!--- TODO I am wondering if all of the causal diagrams that Dan Slater and I made for our article on critical antecedents might be interesting to engage here. Drawing out those diagrams was a keyway for us to show the ways in which arguments overlapped or didn’t once you included critical antecedents.--> 
+
 Visually examining both shared and divergently defined concepts and the scope of relationships among them thus far explored may also help reveal unstated political assumptions in a body of scholarship. For example, if one has a normative assumption that it is the responsibility of a particular institution to control some aspect of social life, a researcher may draw a causal arrow from that institution to the outcome sought and conclude that the failure of that institution was the cause of the outcome. Consider a river that becomes polluted as it flows through farm fields, causing problems for a city's drinking water downstream. One social scientist may draw a causal diagram with arrows pointing from a state regulator to the farmers to the pollution, highlighting a lack of state control (@fig-river-1). Another social scientist might draw a diagram pointing from the downstream city to the farmers, highlighting the lack of payment to compensate the farmers for providing cleaner water (@fig-river-2). Each model assumes a set of social responsibilities and appropriate modes of control.
 
 
@@ -358,6 +414,8 @@ Visually examining both shared and divergently defined concepts and the scope of
 #| fig-width: 3
 #| fig-height: 3
 #| fig-cap-location: top
+
+# source("code/read_sheets.R")
 par(mar=c(0,0,0,0))
 
 edges |> filter( cites == "river-state") |>
@@ -379,11 +437,13 @@ The idea of literature as a "stage" in the research process artificially and unr
 - fieldwork and framework
 
 
-# Limitations 
+# Conclusion 
+
+## Limitations 
 
 There are well-noted limitations to mechanistic descriptions of the world. Pictures and diagrams are one way of telling a story, especially a causal story with a precision that is hard to achieve in prose. However, this precision comes at the cost of reducing complexity. And unlike diagrams used for electricity, the way I have described diagramming leaves little room for subjectivity. 
 
-## Subjective Experience
+### Subjective Experience
 
 Diagrams may be poor tools for communicating a researcher's subjective experiences. Diagrams present the world as mechanistic. For the same reason that a machine is a useful metaphor for simplifying and developing a shared understanding of the world, it also deemphasizes subjective experience. A causal diagram focuses on a process that exists out there in the world rather than an experience. Focusing on the *sequence* of events may deemphasize how people, including researchers, *feel* about those events.
 
@@ -391,13 +451,13 @@ However, diagrams can be a tool to systematically gather data on the subjective 
 
 While @Bravington2018 emphasizes the ability of diagrams to capture subjective experience, they are still limited to a mechanistic representation. In their example, emotion might be represented spatially on the vertical of a timeline. While useful, this type of representation still flattens experience. 
 
-## Loss of Complexity and Nuance
+### Loss of Complexity and Nuance
 
 Conceptual complexity and nuance possible in prose are necessarily lost in translation to a graph with discrete boxes and arrows, especially if the aim is to develop general models. Indeed, much of the confusion discussed above resulting from scholars "talking past each other" or using incommensurate models results from words or phrases being taken out of context. In the context of the prose of each study, the definitions of the concepts usually make sense. Confusion arises when we take claims out of this context and set them alongside other studies that use similar words or phrases with different meanings. On the one hand, reconciling conflicting meanings of concepts can resolve ambiguity and contribute toward generalization. On the other hand, doing so may involve abandoning the complexity and nuance that a scholar meant when they developed or adopted a concept to describe a particular set of cases.
 
 [MORE ON FLATTENING TO TWO DIMENSIONS ]
 
-# Conclusion
+## 
 
 [RETURN TO CONTRAST WITH WEB OF SCIENCE AND IMPRESSIONS OF SENIOR SCHOLARS]
 
@@ -423,15 +483,15 @@ netlit_plot <- function(edges){
   netlit::review(edges, 
                  edge_attributes = "color",
                  node_attributes = node_attributes) |>
-    # Pluck out the graph
+    # Pluck out the graph and plot using the default igraph plot function
     pluck("graph") |>
-    # Plot using the default igraph plot function
-    plot(margin=0)
+    plot()
 }
 
 
 # We can then plot selected nodes or edges  
-edges |> filter( cites == "Ziblatt 2009")  |>
+edges |> 
+  filter( cites == "Ziblatt 2009" ) |>
   netlit_plot()
 ```
 

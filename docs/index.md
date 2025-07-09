@@ -1,6 +1,6 @@
-# [Literature Review as Casing and Diagraming](https://judgelord.github.io/dags/dags-paper.pdf)
+# [Literature Reviews as Generalization](https://judgelord.github.io/dags/dags-paper.pdf)
 
-## Adapting qualitative and quantative research methods for better inferences about existing arguments and evidence
+## Using Diagrams to Case Existing Arguments and Evidence
 
 ## by Devin Judge-Lord
 
